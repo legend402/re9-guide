@@ -220,10 +220,11 @@ body::before {
   content: '';
   position: absolute;
   bottom: -4px;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 2px;
   background: var(--primary);
+  transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
@@ -238,6 +239,41 @@ body::before {
 /* Glitch Effect on Hover */
 .glitch-hover:hover {
   animation: glitch 0.3s ease-in-out;
+}
+
+/* Non-homepage background */
+.non-homepage-bg {
+  position: relative;
+}
+
+.non-homepage-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.non-homepage-bg::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(124, 58, 237, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(244, 63, 94, 0.05) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, rgba(15, 15, 35, 0.3) 100%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Responsive Container */
