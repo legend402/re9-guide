@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Github, Gamepad2, Heart } from 'lucide-react';
 
 export default function Footer() {
@@ -23,24 +24,24 @@ export default function Footer() {
             <h4 className="font-heading text-text-primary mb-4">快速链接</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/walkthrough/" className="text-text-secondary hover:text-primary transition-colors">
+                <Link href="/walkthrough/" className="text-text-secondary hover:text-primary transition-colors">
                   章节攻略
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/weapons/" className="text-text-secondary hover:text-primary transition-colors">
+                <Link href="/weapons/" className="text-text-secondary hover:text-primary transition-colors">
                   武器图鉴
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/enemies/" className="text-text-secondary hover:text-primary transition-colors">
+                <Link href="/enemies/" className="text-text-secondary hover:text-primary transition-colors">
                   敌人/Boss
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/collectibles/" className="text-text-secondary hover:text-primary transition-colors">
+                <Link href="/collectibles/" className="text-text-secondary hover:text-primary transition-colors">
                   收集品指南
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

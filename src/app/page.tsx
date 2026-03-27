@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Layout from '@/components/Layout';
 import SectionCard from '@/components/SectionCard';
 import { getGameData } from '@/lib/data';
@@ -133,18 +134,18 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
+            <Link 
               href="/walkthrough/" 
               className="bg-gradient-to-r from-primary to-cta text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all border border-white/20"
             >
               开始攻略
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/weapons/" 
               className="bg-white/10 backdrop-blur-sm text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-white/20 transition-all border border-white/30"
             >
               查看武器
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -244,9 +245,9 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <a href="/characters/" className="btn-secondary">
+            <Link href="/characters/" className="btn-secondary">
               查看详细角色介绍
-            </a>
+            </Link>
           </div>
         </div>
       </section>

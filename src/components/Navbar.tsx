@@ -50,7 +50,7 @@ export default function Navbar({ isHomePage = false }: NavbarProps) {
         isTransparent
           ? 'bg-transparent'
           : scrolled 
-            ? 'bg-background/90 backdrop-blur-md border-b border-border' 
+            ? 'bg-background/90 backdrop-blur-md' 
             : 'bg-transparent'
       }`}
     >
