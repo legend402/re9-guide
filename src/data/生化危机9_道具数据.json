@@ -1,0 +1,251 @@
+{
+  "consumables": [
+    {
+      "id": "green_herb",
+      "name_cn": "绿色药草",
+      "name_en": "Green Herb",
+      "type": "恢复道具",
+      "effect": "恢复少量生命值",
+      "description": "基础恢复道具，游戏中最常见的治疗物品",
+      "rarity": "常见"
+    },
+    {
+      "id": "red_herb",
+      "name_cn": "红色药草",
+      "name_en": "Red Herb",
+      "type": "合成材料",
+      "effect": "与绿色药草合成可完全恢复生命",
+      "description": "增强型合成材料，单独使用无效",
+      "recipe": "绿色药草+红色药草=完全恢复",
+      "rarity": "稀有"
+    },
+    {
+      "id": "med_injector",
+      "name_cn": "医疗注射器",
+      "name_en": "Medical Injector",
+      "type": "恢复道具",
+      "effect": "恢复中等生命值",
+      "description": "快速恢复道具，比绿色药草效果更好",
+      "rarity": "常见"
+    },
+    {
+      "id": "steroids",
+      "name_cn": "兴奋剂",
+      "name_en": "Steroids",
+      "type": "永久增强",
+      "effect": "永久增加最大生命值",
+      "description": "稀有强化道具，永久提升生命上限",
+      "rarity": "极稀有"
+    },
+    {
+      "id": "stabilizer",
+      "name_cn": "稳定剂",
+      "name_en": "Stabilizer",
+      "type": "永久增强",
+      "effect": "永久增加稳定性",
+      "description": "提升战斗稳定性，减少瞄准晃动",
+      "rarity": "稀有"
+    }
+  ],
+
+  "key_items": [
+    {
+      "id": "old_key",
+      "name_cn": "旧钥匙",
+      "location": "鹪木旅馆照片背面",
+      "usage": "开启紧急出口"
+    },
+    {
+      "id": "wire_cutters",
+      "name_cn": "剪线钳",
+      "location": "酒店台球桌工具箱",
+      "usage": "剪断铁丝网"
+    },
+    {
+      "id": "emergency_exit_key",
+      "name_cn": "紧急出口钥匙",
+      "location": "鹪木旅馆挂画后皮包内",
+      "usage": "开启三楼紧急出口"
+    },
+    {
+      "id": "screwdriver",
+      "name_cn": "螺丝刀",
+      "location": "护理中心推车上工具箱",
+      "prerequisite": "将推车推到书架旁",
+      "usage": "打开保险丝盒"
+    },
+    {
+      "id": "fuse",
+      "name_cn": "保险丝",
+      "location": "201号病房保险丝盒",
+      "usage": "插入电箱开门"
+    },
+    {
+      "id": "lighter",
+      "name_cn": "打火机",
+      "location": "护理中心准备室",
+      "usage": "照亮黑暗区域，驱赶女孩",
+      "special": "可驱赶暗影幽灵"
+    },
+    {
+      "id": "west_wing_keycard",
+      "name_cn": "西翼钥匙卡",
+      "location": "护理中心投药室尸体",
+      "usage": "开启西翼区域"
+    },
+    {
+      "id": "east_wing_keycard",
+      "name_cn": "东翼钥匙卡",
+      "location": "护理中心",
+      "usage": "开启东翼区域"
+    },
+    {
+      "id": "id_bracelet_1",
+      "name_cn": "ID手环1级",
+      "location": "东翼2F尸体",
+      "usage": "开启1级安全门"
+    },
+    {
+      "id": "id_bracelet_2",
+      "name_cn": "ID手环2级",
+      "location": "保安主管办公室",
+      "usage": "开启2级安全门"
+    },
+    {
+      "id": "id_bracelet_3",
+      "name_cn": "ID手环3级",
+      "location": "保安主管办公室",
+      "usage": "开启3级安全门，救出小女孩"
+    },
+    {
+      "id": "access_card",
+      "name_cn": "门禁卡",
+      "location": "地下冷库器官转运箱",
+      "usage": "开启地下区域门禁"
+    },
+    {
+      "id": "joint_plug",
+      "name_cn": "接合插头",
+      "location": "牢房区",
+      "usage": "开启特定门，需要多个配合使用"
+    },
+    {
+      "id": "forklift_key",
+      "name_cn": "堆高机钥匙",
+      "location": "废弃场",
+      "usage": "操作堆高机开路"
+    },
+    {
+      "id": "magnetic_key",
+      "name_cn": "磁力密钥",
+      "location": "废弃场控制室",
+      "usage": "开启磁力门"
+    },
+    {
+      "id": "intellect_orb",
+      "name_cn": "智性之球",
+      "location": "ARK洁净室",
+      "usage": "关键剧情道具"
+    }
+  ],
+
+  "crafting_materials": [
+    {
+      "id": "empty_bottle",
+      "name_cn": "空瓶",
+      "description": "用于合成燃烧瓶或硫酸瓶",
+      "importance": "高",
+      "tip": "非必要不用于引怪，优先合成"
+    },
+    {
+      "id": "infected_blood",
+      "name_cn": "感染血液",
+      "description": "合成材料，可从尸体收集",
+      "recipe_usage": "燃烧瓶配方"
+    },
+    {
+      "id": "gunpowder",
+      "name_cn": "火药",
+      "description": "合成弹药材料",
+      "recipe_usage": "各类弹药配方"
+    },
+    {
+      "id": "scrap",
+      "name_cn": "废料",
+      "description": "制作材料",
+      "obtain_method": "破坏简易小刀获得"
+    }
+  ],
+
+  "throwables": [
+    {
+      "id": "molotov",
+      "name_cn": "燃烧瓶",
+      "recipe": "空瓶+感染血液×60",
+      "effect": "范围火焰伤害",
+      "location": "护理中心锅炉房配方",
+      "usage": "群体伤害，阻止变异",
+      "damage": "高"
+    },
+    {
+      "id": "acid_bottle",
+      "name_cn": "硫酸瓶",
+      "location": "ARK化学品储存室",
+      "effect": "对舔食者造成即死伤害",
+      "special": "可秒杀舔食者",
+      "damage": "即死（对舔食者）"
+    },
+    {
+      "id": "hand_grenade",
+      "name_cn": "手榴弹",
+      "obtain_method": "击败Chunk掉落",
+      "effect": "大范围爆炸伤害",
+      "damage": "极高"
+    },
+    {
+      "id": "flash grenade",
+      "name_cn": "闪光弹",
+      "effect": "眩晕敌人",
+      "special": "可暂时致盲"
+    }
+  ],
+
+  "special_items": [
+    {
+      "id": "hemolytic_injector",
+      "name_cn": "溶血注射器",
+      "character": "格蕾丝专属",
+      "location": "东翼检查室",
+      "effect": "永久击杀普通丧尸，防止尸体变异",
+      "description": "破坏感染血细胞的特殊药物",
+      "usage": "从背后使用可暗杀",
+      "limitation": "对Boss无效",
+      "recommendation": "优先用于堵路丧尸"
+    },
+    {
+      "id": "blood_sampler",
+      "name_cn": "采血器",
+      "location": "血液实验室",
+      "usage": "血液合成谜题"
+    },
+    {
+      "id": "denatured_blood",
+      "name_cn": "变性血液样本",
+      "location": "血液实验室",
+      "usage": "解锁血液合成配方"
+    }
+  ],
+
+  "inventory_upgrades": [
+    {
+      "name": "腰包",
+      "effect": "增加道具栏空间",
+      "obtain_method": "护理中心会客厅用古董币购买"
+    },
+    {
+      "name": "挎包",
+      "effect": "增加道具栏空间",
+      "location": "各处隐藏"
+    }
+  ]
+}

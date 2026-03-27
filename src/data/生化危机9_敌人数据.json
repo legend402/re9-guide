@@ -1,0 +1,359 @@
+{
+  "common_enemies": [
+    {
+      "id": "zombie",
+      "name_cn": "普通丧尸",
+      "name_en": "Zombie",
+      "type": "基础敌人",
+      "weakness": "头部",
+      "health": "低",
+      "damage": "中",
+      "strategy": "手枪爆头触发硬直→回旋踢→倒地处决",
+      "threat_level": "低",
+      "note": "尸体可能变异为水泡丧尸，建议爆头或焚毁"
+    },
+    {
+      "id": "blister_head",
+      "name_cn": "水泡丧尸",
+      "name_en": "Blister Head",
+      "type": "变异体",
+      "weakness": "全身水泡",
+      "health": "中",
+      "damage": "高",
+      "strategy": "击破所有水泡",
+      "threat_level": "中",
+      "description": "丧尸尸体变异形态，移动更快更危险",
+      "spawn_condition": "普通丧尸未被爆头/焚毁，一段时间后变异"
+    },
+    {
+      "id": "mutant_zombie",
+      "name_cn": "变异丧尸",
+      "name_en": "Mutant Zombie",
+      "type": "特殊感染者",
+      "weakness": "头部",
+      "health": "中",
+      "damage": "中高",
+      "strategy": "优先击杀，避免肿瘤破裂",
+      "threat_level": "中",
+      "warning": "携带肿瘤的丧尸，肿瘤会释放毒素使尸体立即变异"
+    },
+    {
+      "id": "chainsaw_zombie",
+      "name_cn": "电锯丧尸",
+      "name_en": "Chainsaw Zombie",
+      "type": "精英敌人",
+      "weakness": "完美格挡后反击",
+      "health": "高",
+      "damage": "极高",
+      "strategy": "必须在挥锯瞬间完美格挡，反击打硬直，重复2-3次",
+      "threat_level": "高",
+      "danger": "攻击无法被普通格挡，必须完美格挡"
+    },
+    {
+      "id": "chef",
+      "name_cn": "主厨丧尸",
+      "name_en": "Chef",
+      "type": "特殊敌人",
+      "weakness": "溶血注射器秒杀",
+      "health": "高",
+      "damage": "高",
+      "strategy": "不要直接交战，引诱推车然后逃跑，或用溶血注射器秒杀",
+      "threat_level": "中高",
+      "special": "可被溶血注射器直接秒杀"
+    },
+    {
+      "id": "singer",
+      "name_cn": "歌手丧尸",
+      "name_en": "Singer",
+      "type": "特殊敌人",
+      "weakness": "优先击杀",
+      "health": "中",
+      "damage": "高",
+      "strategy": "优先击杀，避免尖叫",
+      "threat_level": "中",
+      "danger": "尖叫会造成眩晕和伤害"
+    },
+    {
+      "id": "fat_zombie",
+      "name_cn": "肥胖丧尸",
+      "name_en": "Fat Zombie",
+      "type": "精英敌人",
+      "weakness": "头部",
+      "health": "高",
+      "damage": "中高",
+      "strategy": "建议击杀会省不少时间",
+      "threat_level": "中",
+      "location": "护理中心东翼"
+    },
+    {
+      "id": "licker",
+      "name_cn": "舔食者",
+      "name_en": "Licker",
+      "type": "高级变异体",
+      "weakness": "硫酸瓶即死",
+      "health": "中",
+      "damage": "极高",
+      "strategy": "保持安静潜行，听觉灵敏但视觉为零",
+      "threat_level": "极高",
+      "warning": "不要踩到玻璃渣发出声响",
+      "special": "硫酸瓶可秒杀"
+    },
+    {
+      "id": "mutant_dog",
+      "name_cn": "变异犬",
+      "name_en": "Mutant Dog",
+      "type": "动物变异体",
+      "weakness": "任何攻击",
+      "health": "低",
+      "damage": "中",
+      "strategy": "优先击杀近身攻击",
+      "threat_level": "中",
+      "location": "摩托车追逐战、东浣熊市"
+    }
+  ],
+
+  "bosses": [
+    {
+      "id": "the_girl",
+      "name_cn": "女孩（暗影幽灵）",
+      "name_en": "The Girl / Shadow Ghost",
+      "type": "追踪者型Boss",
+      "character": "格蕾丝专属",
+      "phases": [
+        {
+          "phase": 1,
+          "location": "护理中心",
+          "mechanic": "无法击杀，只能逃跑",
+          "strategy": "利用光源躲避，打火机可驱赶",
+          "weakness": "强光"
+        },
+        {
+          "phase": 2,
+          "location": "水处理厂",
+          "mechanic": "可击杀",
+          "strategy": [
+            "开启三个电源开关开启天窗",
+            "阳光照射后可造成伤害",
+            "使用安魂左轮攻击"
+          ],
+          "weakness": "阳光"
+        }
+      ],
+      "health": "中",
+      "damage": "极高",
+      "weakness": "强光/阳光",
+      "threat_level": "极高",
+      "description": "白发幽灵般的人形怪物，对声音极度敏感",
+      "abilities": ["穿墙移动", "瞬移", "尖啸攻击"],
+      "fear": "光源"
+    },
+    {
+      "id": "chunk",
+      "name_cn": "Chunk",
+      "name_en": "Chunk",
+      "type": "可选Boss",
+      "encounters": [
+        {
+          "character": "格蕾丝",
+          "location": "护理中心东翼2F",
+          "optional": true,
+          "strategy": "可避开"
+        },
+        {
+          "character": "里昂",
+          "location": "护理中心阁楼",
+          "strategy": [
+            "利用高低地形",
+            "霰弹枪爆头",
+            "反复移动游击"
+          ]
+        }
+      ],
+      "health": "高",
+      "damage": "高",
+      "weakness": "头部",
+      "reward": "手榴弹（里昂击败后）",
+      "threat_level": "中",
+      "description": "巨大的肥硕怪物，被称为'巨婴'"
+    },
+    {
+      "id": "blister_borne",
+      "name_cn": "水泡宿主",
+      "name_en": "Blister Borne",
+      "type": "中型Boss",
+      "character": "里昂",
+      "location": "护理中心礼拜堂",
+      "health": "高",
+      "damage": "高",
+      "weakness": "全身水泡",
+      "strategy": "击破全身水泡，注意周围丧尸变异",
+      "threat_level": "中高",
+      "description": "全身长满水泡的变异体"
+    },
+    {
+      "id": "titan_spinner",
+      "name_cn": "泰坦纺锤者",
+      "name_en": "Titan Spinner",
+      "type": "巨型Boss",
+      "character": "里昂",
+      "location": "东浣熊市废弃建筑",
+      "health": "极高",
+      "damage": "极高",
+      "phases": [
+        {
+          "phase": 1,
+          "strategy": "保持距离，射击口部"
+        },
+        {
+          "phase": 2,
+          "weakness": "背部橙色囊包",
+          "strategy": "造成足够伤害后倒地暴露弱点，使用安魂左轮4-5次"
+        }
+      ],
+      "tips": [
+        "利用红色爆炸桶",
+        "小蜘蛛群使用冲锋枪清理",
+        "通过墙壁蛛网追踪位置"
+      ],
+      "weakness": "口部/背部橙色囊包",
+      "threat_level": "极高",
+      "description": "巨型蜘蛛，阿拉克诺恐惧症警告"
+    },
+    {
+      "id": "victor_garmrs",
+      "name_cn": "维克多与Garmrs",
+      "name_en": "Victor and Garmrs",
+      "type": "追逐战Boss",
+      "character": "里昂",
+      "location": "东浣熊市高速公路",
+      "mechanic": "摩托车追逐",
+      "health": "N/A",
+      "strategy": [
+        "优先射击最近的变异犬",
+        "维克多头上出现红箭头时射击阻止火箭"
+      ],
+      "threat_level": "低",
+      "description": "最简单的Boss战，载具战斗",
+      "difficulty": "1/10"
+    },
+    {
+      "id": "super_tyrant",
+      "name_cn": "超级暴君T-501",
+      "name_en": "Super Tyrant T-501",
+      "type": "经典Boss",
+      "character": "里昂",
+      "location": "浣熊市中心篮球场",
+      "health": "极高",
+      "damage": "极高",
+      "weakness": "胸口心脏",
+      "strategy": [
+        "格挡爪击",
+        "心脏暴露时集中火力",
+        "躲避扔车攻击",
+        "使用霰弹枪和步枪"
+      ],
+      "threat_level": "极高",
+      "description": "经典暴君回归，Mr.X",
+      "note": "在RPD是追逐战，篮球场才正式战斗"
+    },
+    {
+      "id": "plant_43",
+      "name_cn": "植物43号",
+      "name_en": "Plant 43",
+      "type": "巨型Boss",
+      "character": "里昂",
+      "location": "黑荆棘站/ARK入口",
+      "health": "极高",
+      "damage": "高",
+      "weakness": "中心花苞",
+      "strategy": [
+        "等待中心花苞张开时射击",
+        "躲避藤蔓攻击（抬升时有预兆）",
+        "利用爆炸罐"
+      ],
+      "threat_level": "极高",
+      "description": "巨大变异植物"
+    },
+    {
+      "id": "commander",
+      "name_cn": "指挥官",
+      "name_en": "The Commander",
+      "type": "近战Boss",
+      "character": "里昂",
+      "location": "ARK设施",
+      "health": "高",
+      "damage": "极高",
+      "strategy": [
+        "仅能使用斧头攻击",
+        "成功格挡后连续攻击",
+        "学习攻击模式，掌握格挡时机",
+        "类似RE4克劳萨刀战"
+      ],
+      "reward": "凡人之刃",
+      "threat_level": "极高",
+      "description": "类似HUNK的精英卫兵",
+      "restriction": "枪枝无效，只能近战"
+    },
+    {
+      "id": "victor_gideon",
+      "name_cn": "维克多·基甸",
+      "name_en": "Victor Gideon",
+      "type": "最终Boss",
+      "character": "里昂",
+      "location": "ARK设施深处",
+      "prerequisite": "选择'释放厄尔庇斯'进入真结局",
+      "health": "极高",
+      "damage": "极高",
+      "phases": [
+        {
+          "phase": 1,
+          "name": "人形",
+          "abilities": ["触手攻击", "电击", "瞬移背刺", "枪械攻击"],
+          "strategy": [
+            "完美格挡可反弹子弹",
+            "瞬移前有音效和画面提示",
+            "保持距离"
+          ]
+        },
+        {
+          "phase": 2,
+          "name": "火箭发射器",
+          "strategy": "射击使其掉落火箭筒，拾取使用"
+        },
+        {
+          "phase": 3,
+          "name": "Nemesis形态",
+          "appearance": "巨大怪物，全身红色弱点",
+          "strategy": [
+            "射击全身红色囊肿",
+            "使用速射武器如冲锋枪",
+            "继续格挡攻击"
+          ],
+          "weakness": "全身红色弱点"
+        }
+      ],
+      "final_action": "QTE挣脱后使用斧头攻击核心",
+      "threat_level": "最高",
+      "description": "最终Boss，Nemesis病毒变异体",
+      "recommendation": "武器和护甲全升级，携带充足弹药"
+    }
+  ],
+
+  "enemy_behavior": {
+    "dynamic_difficulty": {
+      "description": "动态难度系统",
+      "downgrade": "少杀敌、少拾取、频繁受伤或死亡 → 敌人更脆",
+      "upgrade": "杀敌越多、拾取越多 → 敌人更耐打、伤害更高",
+      "note": "癫狂难度取消动态调节，固定最高难度"
+    },
+    "mutation": {
+      "description": "尸体变异机制",
+      "trigger": "普通丧尸未被爆头或焚毁，一段时间后会变异为水泡丧尸",
+      "prevention": [
+        "爆头击杀",
+        "焚毁尸体（燃烧瓶）",
+        "使用溶血注射器"
+      ]
+    }
+  }
+}

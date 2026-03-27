@@ -1,0 +1,367 @@
+{
+  "weapons": [
+    {
+      "id": "alligator_snapper",
+      "name_cn": "鳄龟手枪",
+      "name_en": "Alligator Snapper",
+      "type": "手枪",
+      "character": "里昂",
+      "obtain_method": "初始装备",
+      "stats": {
+        "power": 1.0,
+        "stability": 2.3,
+        "precision": 2.3,
+        "rate_of_fire": 2.5,
+        "reload_speed": 3.0,
+        "ammo_capacity": 9
+      },
+      "ammo_type": "手枪弹药",
+      "description": "可靠的半自动手枪，DSO人员配备",
+      "upgrades": [
+        {"name": "补偿器Lv.1", "stats": "威力1.3/稳定3", "cost": "5000"},
+        {"name": "光滑弹匣卡笋Lv.1", "stats": "装填3.5", "cost": "3000"},
+        {"name": "大容量弹匣Lv.1", "stats": "弹容12", "cost": "2000"},
+        {"name": "补偿器+Lv.2", "stats": "威力1.8", "cost": "8000"}
+      ]
+    },
+    {
+      "id": "b934",
+      "name_cn": "B934手枪",
+      "name_en": "B934",
+      "type": "手枪",
+      "character": "格蕾丝",
+      "obtain_method": "护理中心餐厅地面",
+      "stats": {
+        "power": "基础",
+        "description": "直吹式手枪，战前设计"
+      },
+      "ammo_type": "手枪弹药"
+    },
+    {
+      "id": "ss_m232",
+      "name_cn": "S&S M232手枪",
+      "name_en": "S&S M232",
+      "type": "手枪",
+      "character": "格蕾丝",
+      "obtain_method": "护理中心2F酒吧吧台",
+      "stats": {
+        "power": 1.1,
+        "stability": 2.5,
+        "precision": 2.3,
+        "rate_of_fire": 2.3,
+        "reload_speed": 2.5,
+        "ammo_capacity": 9
+      },
+      "ammo_type": "手枪弹药",
+      "description": "格蕾丝用第一笔薪水购买自卫",
+      "recommendation": "早期推荐武器，全面优于B934"
+    },
+    {
+      "id": "silencer_9",
+      "name_cn": "消音者9",
+      "name_en": "Silencer 9",
+      "type": "手枪",
+      "character": "通用",
+      "obtain_method": "东浣熊市补给箱购买",
+      "stats": {
+        "power": "高",
+        "precision": "极高"
+      },
+      "special": "内置消音器，降低射击声音",
+      "ammo_type": "手枪弹药"
+    },
+    {
+      "id": "matilda_imp",
+      "name_cn": "玛蒂尔达IMP",
+      "name_en": "Matilda IMP",
+      "type": "手枪",
+      "character": "通用",
+      "obtain_method": "通关后500CP解锁",
+      "special": "三连发模式",
+      "ammo_type": "手枪弹药"
+    },
+    {
+      "id": "requiem",
+      "name_cn": "安魂左轮",
+      "name_en": "Requiem",
+      "type": "左轮/马格南",
+      "character": "双主角",
+      "obtain_method": "里昂初始/格蕾丝由里昂给予",
+      "stats": {
+        "power": 4.3,
+        "stability": 0.5,
+        "precision": 0.8,
+        "rate_of_fire": 0.8,
+        "reload_speed": 0.8,
+        "ammo_capacity": 5
+      },
+      "ammo_type": "12.7x55mm马格南弹药",
+      "description": "DSO配备的大型突击左轮，高威力穿透",
+      "upgrades": [
+        {"name": "带孔枪管Lv.1", "stats": "威力4.6", "cost": "5000"},
+        {"name": "枪管套Lv.1", "stats": "稳定2.2", "cost": "3000"}
+      ],
+      "note": "弹药极其稀有，仅用于Boss战和危险目标",
+      "recommendation": "Boss战专用"
+    },
+    {
+      "id": "ghost_grudge",
+      "name_cn": "幽灵怨恨",
+      "name_en": "Ghost Grudge",
+      "type": "左轮",
+      "character": "通用",
+      "obtain_method": "通关后1000CP解锁",
+      "stats": {
+        "power": 4.8,
+        "stability": 2.4,
+        "precision": 2.5,
+        "rate_of_fire": 3.0,
+        "reload_speed": 1.5
+      },
+      "ammo_type": "12.7x55mm"
+    },
+    {
+      "id": "msbg500",
+      "name_cn": "MSBG 500霰弹枪",
+      "name_en": "MSBG 500",
+      "type": "霰弹枪",
+      "character": "里昂",
+      "obtain_method": "护理中心阁楼",
+      "stats": {
+        "power": "高",
+        "spread": "大"
+      },
+      "description": "泵动式霰弹枪，适合近距离群控",
+      "upgrades": [
+        {"name": "硬铝螺栓Lv.1", "stats": "威力3/射速2", "cost": "4000"},
+        {"name": "鸭嘴扼流圈Lv.1", "stats": "威力3", "cost": "2000"}
+      ],
+      "ammo_type": "霰弹"
+    },
+    {
+      "id": "990_tac",
+      "name_cn": "990-TAC霰弹枪",
+      "name_en": "990-TAC",
+      "type": "霰弹枪",
+      "character": "通用",
+      "obtain_method": "东浣熊市补给箱购买",
+      "stats": {
+        "type": "半自动",
+        "grouping": "优秀"
+      },
+      "description": "现代半自动霰弹枪，精密度高",
+      "ammo_type": "霰弹"
+    },
+    {
+      "id": "w870",
+      "name_cn": "W870警用霰弹枪",
+      "name_en": "W870 Police",
+      "type": "霰弹枪",
+      "character": "里昂",
+      "obtain_method": "肯多枪械店货架",
+      "stats": {
+        "power": 6.5,
+        "spread": "极广"
+      },
+      "description": "泵动式霰弹枪，扩散范围广",
+      "ammo_type": "霰弹"
+    },
+    {
+      "id": "stiri_revo3",
+      "name_cn": "Stiri Revo3 A1冲锋枪",
+      "name_en": "Stiri REVO3 A1",
+      "type": "冲锋枪",
+      "character": "通用",
+      "obtain_method": "东浣熊市补给箱购买",
+      "stats": {
+        "power": 0.5,
+        "stability": 2.7,
+        "precision": 1.5,
+        "rate_of_fire": 4.6,
+        "reload_speed": 3.0,
+        "ammo_capacity": 30
+      },
+      "description": "紧凑型聚合物框架冲锋枪，射速极高",
+      "ammo_type": "冲锋枪弹药"
+    },
+    {
+      "id": "gal_smg",
+      "name_cn": "Gal冲锋枪",
+      "name_en": "Gal SMG",
+      "type": "冲锋枪",
+      "character": "里昂",
+      "obtain_method": "地下停车场西北角",
+      "description": "强力冲锋枪",
+      "ammo_type": "冲锋枪弹药"
+    },
+    {
+      "id": "freyas_needle",
+      "name_cn": "芙蕾雅之针",
+      "name_en": "Freya's Needle",
+      "type": "机枪手枪",
+      "character": "通用",
+      "obtain_method": "通关后4000CP解锁",
+      "special": "单手可用，射速极高",
+      "ammo_type": "手枪弹药"
+    },
+    {
+      "id": "clatter_carbine",
+      "name_cn": "咔嗒卡宾枪",
+      "name_en": "Clatter Carbine",
+      "type": "突击步枪",
+      "character": "通用",
+      "obtain_method": "通关后6000CP解锁",
+      "ammo_type": "步枪弹药"
+    },
+    {
+      "id": "classic_70",
+      "name_cn": "经典70狙击步枪",
+      "name_en": "Classic 70",
+      "type": "狙击步枪",
+      "character": "里昂",
+      "obtain_method": "剧情自动获得（庭院剧情）",
+      "stats": {
+        "type": "栓动式",
+        "power": "极高"
+      },
+      "description": "标准栓动步枪，可造成严重伤害",
+      "upgrades": [
+        {"name": "PVD枪管Lv.1", "stats": "威力3.7", "cost": "5000"},
+        {"name": "高级枪托Lv.1", "stats": "稳定3.3", "cost": "3000"}
+      ],
+      "ammo_type": "步枪弹药"
+    },
+    {
+      "id": "marksman_1a",
+      "name_cn": "神射手1A狙击步枪",
+      "name_en": "Marksman 1A",
+      "type": "狙击步枪",
+      "character": "里昂",
+      "obtain_method": "BSAA集装箱03",
+      "stats": {
+        "type": "半自动",
+        "power": 5.0
+      },
+      "description": "半自动精确射手步枪",
+      "ammo_type": "步枪弹药"
+    },
+    {
+      "id": "redemption",
+      "name_cn": "救赎步枪",
+      "name_en": "Redemption",
+      "type": "狙击步枪",
+      "character": "通用",
+      "obtain_method": "通关后3500CP解锁",
+      "ammo_type": "步枪弹药"
+    },
+    {
+      "id": "hatchet",
+      "name_cn": "战术斧",
+      "name_en": "Hatchet",
+      "type": "近战",
+      "character": "里昂",
+      "obtain_method": "初始装备",
+      "stats": {
+        "power": 1.8,
+        "durability": 2.5
+      },
+      "description": "特种部队用斧头，可致命攻击但需定期维护",
+      "mechanics": [
+        "完美格挡不消耗耐久",
+        "敌人硬直后可接回旋踢",
+        "倒地后可处决"
+      ]
+    },
+    {
+      "id": "mortal_edge",
+      "name_cn": "凡人之刃",
+      "name_en": "Mortal Edge",
+      "type": "近战",
+      "character": "里昂",
+      "obtain_method": "击败ARK指挥官掉落/通关后3000CP",
+      "stats": {
+        "power": 2.4,
+        "durability": 4.0
+      },
+      "description": "强力斧头，战术斧的升级版"
+    },
+    {
+      "id": "hunting_knife",
+      "name_cn": "猎刀",
+      "name_en": "Hunting Knife",
+      "type": "近战",
+      "character": "通用",
+      "obtain_method": "护理中心餐厅击败丧尸获得",
+      "durability": "有限"
+    },
+    {
+      "id": "kotetsu",
+      "name_cn": "虎彻",
+      "name_en": "Kotetsu",
+      "type": "近战",
+      "character": "格蕾丝",
+      "obtain_method": "通关后5000CP解锁",
+      "special": "永不损坏",
+      "description": "不毁小刀"
+    },
+    {
+      "id": "rip_knife",
+      "name_cn": "R.I.P.刀",
+      "name_en": "R.I.P. Knife",
+      "type": "近战",
+      "character": "通用",
+      "obtain_method": "癫狂难度护理中心交换室",
+      "special": "高伤害"
+    },
+    {
+      "id": "rpg7",
+      "name_cn": "RPG-7火箭筒",
+      "name_en": "RPG-7",
+      "type": "特殊武器",
+      "character": "里昂",
+      "obtain_method": "通关后15000CP解锁",
+      "stats": {
+        "power": 5.0,
+        "radius": 5.0
+      },
+      "infinite_ammo": "35000CP解锁无限弹药"
+    }
+  ],
+  
+  "upgrade_system": {
+    "description": "里昂可在补给箱购买武器升级",
+    "tier_1_2": "标准升级，提升威力、射速、弹容等，需信用点",
+    "tier_3": "破坏全部25个浣熊先生后解锁高级调校",
+    "attachments": [
+      {"name": "补偿器", "location": "扭曲壁橱", "effect": "改善后坐力稳定性"},
+      {"name": "银色瞄准镜", "location": "肯多枪械店"}
+    ]
+  },
+
+  "recommended_loadouts": {
+    "leon_early": {
+      "primary": "MSBG 500霰弹枪（近距离）",
+      "secondary": "鳄龟手枪（标准敌人）",
+      "heavy": "安魂左轮（Boss战）",
+      "melee": "战术斧"
+    },
+    "leon_mid": {
+      "primary": "W870或990-TAC（霰弹枪）",
+      "secondary": "消音者9（精准射击）",
+      "long_range": "经典70（狙击）",
+      "heavy": "安魂左轮"
+    },
+    "grace": {
+      "primary": "S&S M232（标准战斗）",
+      "emergency": "安魂左轮（危险目标）",
+      "special": "溶血注射器（永久击杀）",
+      "note": "格蕾丝无法升级武器"
+    },
+    "speedrun": {
+      "charm": "野心挂饰（伪无限弹药）",
+      "scope": "神射手A（暴击伤害）",
+      "boss": "安魂左轮",
+      "accessory": "监察者瞄准镜"
+    }
+  }
+}

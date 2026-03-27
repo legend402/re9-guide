@@ -1,0 +1,304 @@
+{
+  "overview": {
+    "total_collectible_types": 6,
+    "total_count": "200+",
+    "carry_over": "多周目累计（除关键道具外）",
+    "missable_warning": "本作没有章节选择，务必分区留档",
+    "tracking": "游戏内挑战菜单可追踪"
+  },
+
+  "mr_raccoon": {
+    "name_cn": "浣熊先生纪念雕像",
+    "name_en": "Mr. Raccoon Memoriam",
+    "total": 25,
+    "trophy": "你这个小坏蛋！",
+    "description": "浣熊造型的人偶，靠近会发出声音并摇摆",
+    "destruction_method": "射击或用小刀攻击破坏",
+    "unlock_map": "通关后可在奖励菜单购买地图显示位置",
+    "reward": "破坏全部25个解锁Tier 3武器升级（高级调校）",
+    "locations_by_area": [
+      {
+        "area": "Wrenwood",
+        "count": 1,
+        "number": "#1",
+        "method": "里昂用链锯开门后，壁炉上"
+      },
+      {
+        "area": "护理中心（格蕾丝）",
+        "count": 4,
+        "details": [
+          {"number": "#2", "location": "东翼大厅，使用钥匙卡后正前方"},
+          {"number": "#3", "location": "等候室东侧走廊尽头"},
+          {"number": "#4", "location": "小厨房，水槽旁"},
+          {"number": "#5", "location": "投药室牢房，救出小女孩后"}
+        ]
+      },
+      {
+        "area": "护理中心（里昂）",
+        "count": 4,
+        "details": [
+          {"number": "#1", "note": "与格蕾丝#1相同"},
+          {"number": "#6", "location": "工作室，使用接合插头后"},
+          {"number": "#7", "location": "集体宿舍，锅炉房接合插头后"},
+          {"number": "#8", "location": "花园，从楼梯用狙击枪射击"}
+        ]
+      },
+      {
+        "area": "东浣熊市",
+        "count": 10,
+        "character": "里昂",
+        "details": [
+          {"number": "#9", "location": "坠落区域，控制格蕾丝后里昂掉落处"},
+          {"number": "#10", "location": "物流仓库屋顶，获得分配器后左侧"},
+          {"number": "#11", "location": "绿洲咖啡馆，柜台后货架"},
+          {"number": "#12", "location": "中央营地，获得分销商后左侧"},
+          {"number": "#13", "location": "中央营地上方"},
+          {"number": "#14", "location": "地下停车场，雪松公寓钥匙处"},
+          {"number": "#15", "location": "雪松公寓，使用生锈曲柄爬梯后"},
+          {"number": "#16", "location": "BSAA集装箱钥匙街道，射击梯子爬上去"},
+          {"number": "#17", "location": "里奇伍德站，起重机发电机大门"},
+          {"number": "#18", "location": "里奇伍德站汽车内"}
+        ]
+      },
+      {
+        "area": "浣熊市中心",
+        "count": 4,
+        "character": "里昂",
+        "details": [
+          {"number": "#19", "location": "中央营地，获得燃料罐后电梯上去"},
+          {"number": "#20", "location": "摩托车战后步行，毁坏油轮旁"},
+          {"number": "#21", "location": "作战室，左侧瓦砾后"},
+          {"number": "#22", "location": "图书馆，射击梯子上去，书架底层"}
+        ]
+      },
+      {
+        "area": "浣熊市中心（孤儿院后）",
+        "count": 1,
+        "details": [
+          {"number": "#23", "location": "肯多枪械店，进门右侧"}
+        ]
+      },
+      {
+        "area": "ARK设施",
+        "count": 2,
+        "details": [
+          {"number": "#24", "location": "ARK入口，消毒隧道右侧箱子后"},
+          {"number": "#25", "location": "作战室，格蕾丝进入后"}
+        ]
+      }
+    ]
+  },
+
+  "files": {
+    "name_cn": "文件",
+    "name_en": "Files",
+    "total": 75,
+    "trophy": "案件已结案",
+    "description": "游戏中的文档、笔记和记录",
+    "tracking": "可在文件菜单查看已收集，每个文件有唯一名称",
+    "carry_over": "多周目累计",
+    "categories": [
+      "调查报告",
+      "员工笔记",
+      "研究文档",
+      "新闻报道",
+      "个人日记",
+      "官方文件"
+    ],
+    "key_files": [
+      {"id": 1, "name": "调查报告", "location": "初始自带"},
+      {"id": 2, "name": "鹪木市指南", "location": "鹪木市地图牌"},
+      {"id": 3, "name": "酒店宣传册", "location": "鹪木旅馆大堂"},
+      {"id": 4, "name": "维克多·基甸调查报告", "location": "里昂初始"},
+      {"id": 48, "name": "浣熊市事件报告", "location": "东浣熊市剧情获得"},
+      {"id": 75, "name": "最后文件", "location": "接近结局"}
+    ],
+    "note": "按顺序收集，第一个必定在开头，最后一个必定在结局前"
+  },
+
+  "antique_coins": {
+    "name_cn": "古董币",
+    "name_en": "Antique Coins",
+    "total": 22,
+    "character": "格蕾丝专属（里昂无法拾取）",
+    "location": "仅护理中心区域",
+    "usage": "在护理中心会客厅交换升级",
+    "carry_over": "无法带到其他区域",
+    "insanity_note": "癫狂难度位置会改变，部分硬币提前到Wrenwood",
+    "upgrades": [
+      {
+        "item": "腰包×2",
+        "cost": "5币×2",
+        "effect": "道具栏扩容",
+        "recommendation": "优先购买"
+      },
+      {
+        "item": "兴奋剂",
+        "cost": "5币",
+        "effect": "永久增加最大生命值"
+      },
+      {
+        "item": "稳定剂",
+        "cost": "3币",
+        "effect": "永久增加稳定性"
+      },
+      {
+        "item": "溶血注射器配方",
+        "cost": "4币",
+        "effect": "解锁制作配方"
+      }
+    ],
+    "total_cost": "22币（刚好够买所有升级）",
+    "key_locations": [
+      {"coin": "#1", "location": "护士站医疗车旁"},
+      {"coin": "#2", "location": "警卫办公室安全室"},
+      {"coin": "#3-4", "location": "餐厅附近走廊"},
+      {"coin": "#5-7", "location": "酒吧保险箱"},
+      {"coin": "#8-10", "location": "检查室保险箱"},
+      {"coin": "#14-15", "location": "等候室保险箱"},
+      {"coin": "#21", "location": "歌手丧尸掉落"},
+      {"coin": "#22", "location": "庭院"}
+    ]
+  },
+
+  "safes": {
+    "name_cn": "保险箱",
+    "name_en": "Safes",
+    "total": 5,
+    "trophy": "没有保险箱是安全的",
+    "character": "格蕾丝专属（里昂无法开启）",
+    "insanity_change": "癫狂难度密码会改变",
+    "list": [
+      {
+        "id": 1,
+        "location": "酒吧&休息室",
+        "normal_code": "左10-右80-左30",
+        "insanity_code": "改变",
+        "reward": "3个古董币"
+      },
+      {
+        "id": 2,
+        "location": "检查室",
+        "normal_code": "特定密码",
+        "reward": "3个古董币"
+      },
+      {
+        "id": 3,
+        "location": "会客厅",
+        "reward": "浣熊先生地图（显示所有浣熊位置）",
+        "special": "最重要的保险箱"
+      },
+      {
+        "id": 4,
+        "location": "地下室",
+        "normal_code": "右60-左40-右80",
+        "insanity_code": "左70-右50-左20"
+      },
+      {
+        "id": 5,
+        "location": "灭菌室（ARK）",
+        "normal_code": "右10-左90-右20",
+        "insanity_code": "左80-右50-左0"
+      }
+    ],
+    "password_sources": "密码文件散布在区域内，仔细搜索"
+  },
+
+  "bsaa_containers": {
+    "name_cn": "BSAA集装箱",
+    "name_en": "BSAA Containers",
+    "total": 3,
+    "trophy": "箱子期望",
+    "key_location": "东浣熊市剧情自动获得",
+    "contents": [
+      {
+        "container": "#1",
+        "location": "东浣熊市主街",
+        "content": "Marksman 1A狙击步枪"
+      },
+      {
+        "container": "#2",
+        "location": "东浣熊市",
+        "content": "武器和物资"
+      },
+      {
+        "container": "#3",
+        "location": "东浣熊市",
+        "content": "武器和物资"
+      }
+    ]
+  },
+
+  "plant_seedlings": {
+    "name_cn": "植物43号幼苗",
+    "name_en": "Plant 43 Seedlings",
+    "total": 9,
+    "trophy": "今天不行，芽！",
+    "description": "摧毁所有植物43号幼苗",
+    "locations": "分散在各个区域，共9株"
+  },
+
+  "charms": {
+    "name_cn": "挂饰",
+    "name_en": "Charms",
+    "description": "武器装饰品，提供属性加成",
+    "equip_slot": "武器挂饰槽",
+    "examples": [
+      {
+        "name": "野心挂饰",
+        "effect": "伪无限弹药",
+        "usage": "速通推荐"
+      },
+      {
+        "name": "神射手A",
+        "effect": "暴击伤害提升",
+        "usage": "输出强化"
+      },
+      {
+        "name": "监察者瞄准镜",
+        "effect": "辅助瞄准",
+        "usage": "精准射击"
+      },
+      {
+        "name": "可爱小熊",
+        "location": "肯多枪械店",
+        "effect": "特殊效果"
+      }
+    ]
+  },
+
+  "hip_pouches": {
+    "name_cn": "腰包",
+    "name_en": "Hip Pouches",
+    "description": "增加道具栏空间",
+    "locations": [
+      "护理中心会客厅（古董币购买）",
+      "其他隐藏位置"
+    ]
+  },
+
+  "weapon_attachments": {
+    "name_cn": "武器配件",
+    "description": "武器强化配件",
+    "list": [
+      {
+        "name": "补偿器",
+        "location": "扭曲壁橱",
+        "effect": "改善后坐力稳定性"
+      },
+      {
+        "name": "银色瞄准镜",
+        "location": "肯多枪械店",
+        "effect": "提升瞄准精度"
+      }
+    ]
+  },
+
+  "tracking_tips": {
+    "in_game": "挑战菜单可查看收集进度",
+    "cross_playthrough": "浣熊先生和文件多周目累计",
+    "manual_save": "建议每个区域保留手动存档",
+    "new_game_plus": "二周目可继承解锁的武器",
+    "maps": "通关后可购买浣熊地图"
+  }
+}

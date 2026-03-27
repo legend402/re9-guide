@@ -1,0 +1,1538 @@
+{
+  "game_info": {
+    "title": "生化危机9：安魂曲",
+    "english_title": "Resident Evil Requiem",
+    "release_date": "2026年2月27日",
+    "developer": "CAPCOM",
+    "publisher": "CAPCOM",
+    "platforms": ["PS5", "Xbox Series X|S", "Nintendo Switch 2", "PC (Steam/Epic)"],
+    "genre": "生存恐怖/动作冒险",
+    "price": {
+      "digital_standard": "348元",
+      "currency": "CNY"
+    },
+    "director": "中西晃史",
+    "producer": "熊泽雅登",
+    "series_producer": "竹内润",
+    "engine": "RE引擎",
+    "timeline": "2028年（浣熊市事件30年后）",
+    "description": "《生化危机：安魂曲》是CAPCOM开发的生存恐怖游戏，为《生化危机》系列第九部正统续作。本作采用双主角系统，玩家将扮演联邦调查局分析师格蕾丝·阿什克罗夫特和传奇特工里昂·S·肯尼迪，在浣熊市废墟中揭开惊天阴谋。",
+    "game_features": [
+      "双主角叙事系统：格蕾丝侧重生存恐怖，里昂侧重动作射击",
+      "第一人称与第三人称视角自由切换",
+      "RE引擎打造的次世代画面表现",
+      "系列30周年纪念作品",
+      "重返浣熊市废墟，系列故事时间线最靠后的正传作品"
+    ]
+  },
+  
+  "story": {
+    "setting": "故事发生在2028年，距离1998年浣熊市被导弹摧毁整整30年。美国各地接连发生离奇死亡事件，一具尸体在某废弃旅馆内被发现。",
+    "plot_summary": "联邦调查局分析师格蕾丝·阿什克罗夫特前往调查母亲八年前遇害的旅馆，与此同时，负责此案的资深特工里昂·S·肯尼迪也介入调查。两人的命运在充满谜团的'Wrenwood Hotel'交织，逐步逼近曾震撼世界的'浣熊市事件'背后所隐藏的真相。",
+    "main_characters": [
+      {
+        "name": "格蕾丝·阿什克罗夫特",
+        "role": "FBI分析师",
+        "playstyle": "生存恐怖，潜行解谜为主，前期缺乏战斗训练",
+        "default_view": "第一人称",
+        "description": "本作女主角，为调查母亲死因深入废弃城市"
+      },
+      {
+        "name": "里昂·S·肯尼迪",
+        "role": "DSO特工",
+        "playstyle": "动作射击，拥有丰富的武器和战斗技巧",
+        "default_view": "第三人称",
+        "description": "系列传奇角色，以特工身份介入调查"
+      }
+    ]
+  },
+
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "title": "鹪木市-鹪木旅馆",
+      "location": "Wrenwood Hotel",
+      "playable_character": "格蕾丝",
+      "description": "故事开始于鹪木市，格蕾丝来到母亲遇害的旅馆调查",
+      "key_items": [
+        {
+          "name": "鹪木市指南",
+          "type": "文件",
+          "location": "路边地图牌"
+        },
+        {
+          "name": "格蕾丝的照片",
+          "type": "关键道具",
+          "location": "吧台旁木柱上",
+          "usage": "旋转照片发现背后的旧钥匙"
+        },
+        {
+          "name": "旧钥匙",
+          "type": "关键道具",
+          "location": "照片背面",
+          "usage": "开启紧急出口"
+        },
+        {
+          "name": "剪线钳",
+          "type": "工具",
+          "location": "酒店台球桌工具箱",
+          "usage": "剪断铁丝网"
+        },
+        {
+          "name": "紧急出口钥匙",
+          "type": "关键道具",
+          "location": "挂画后皮包内",
+          "usage": "开启三楼紧急出口"
+        }
+      ],
+      "gameplay": [
+        "本章全程无枪械，只能靠奔跑和快速转向规避敌人",
+        "调查路边地图牌获取文件",
+        "从204号房触发剧情",
+        "按住奔跑不松手直奔三楼紧急出口触发剧情"
+      ],
+      "boss_encounters": [],
+      "tips": [
+        "绝对不要回头缠斗",
+        "所有敌人仅能靠奔跑规避",
+        "拿到紧急出口钥匙后的追击战无需理会身后敌人"
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "title": "罗兹山护理中心-二楼病房",
+      "location": "Rhodes Hill Care Center",
+      "playable_character": "格蕾丝",
+      "description": "格蕾丝被困在护理中心，首次遭遇'女孩'怪物",
+      "key_items": [
+        {
+          "name": "医疗注射器",
+          "type": "消耗品",
+          "location": "护士站桌面"
+        },
+        {
+          "name": "绿色药草",
+          "type": "恢复道具",
+          "location": "护士站储物柜"
+        },
+        {
+          "name": "螺丝刀",
+          "type": "工具",
+          "location": "推车上方的工具箱",
+          "prerequisite": "将推车推到书架旁，爬上推车"
+        },
+        {
+          "name": "保险丝",
+          "type": "关键道具",
+          "location": "201号病房保险丝盒",
+          "usage": "插入走廊尽头电箱开门"
+        },
+        {
+          "name": "打火机",
+          "type": "工具",
+          "location": "准备室隐藏门内",
+          "usage": "照亮黑暗区域"
+        }
+      ],
+      "gameplay": [
+        "推车谜题：推动推车会发出巨响吸引BOSS，需先确认BOSS不在房间",
+        "扔空瓶到对面引开注意力后快速完成推车操作",
+        "保险丝获取：螺丝刀是唯一关键道具，必须先完成推车步骤"
+      ],
+      "boss_encounters": [
+        {
+          "name": "女孩（暗影幽灵）",
+          "type": "剧情Boss",
+          "description": "首个BOSS战，对声音极度敏感，惧怕强光",
+          "strategy": [
+            "全程静步移动，关闭打火机降低被发现概率",
+            "被发现时立即扔空瓶到反方向引怪",
+            "钻病房的通风洞绕路甩开"
+          ],
+          "weakness": "强光"
+        }
+      ],
+      "tips": [
+        "保持打火机开启可驱赶女孩",
+        "利用声音引开怪物",
+        "快速转向是唯一保命技"
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "title": "罗兹山护理中心-一楼区域",
+      "location": "Rhodes Hill Care Center",
+      "playable_character": "里昂",
+      "description": "里昂进入护理中心，获得初始武器装备",
+      "key_items": [
+        {
+          "name": "鳄龟手枪",
+          "type": "武器",
+          "obtain_method": "初始装备"
+        },
+        {
+          "name": "安魂左轮",
+          "type": "武器",
+          "obtain_method": "初始装备"
+        },
+        {
+          "name": "战术斧",
+          "type": "近战武器",
+          "obtain_method": "初始装备"
+        },
+        {
+          "name": "西翼钥匙卡",
+          "type": "关键道具",
+          "location": "投药室尸体",
+          "usage": "开启西翼门"
+        }
+      ],
+      "gameplay": [
+        "清理沿途丧尸，搜刮车辆后备箱",
+        "手枪爆头触发硬直→接回旋踢360°清场→倒地后用斧头处决",
+        "这套流程可节省50%以上弹药"
+      ],
+      "enemies": [
+        {
+          "name": "普通丧尸",
+          "strategy": "手枪爆头+回旋踢+处决"
+        },
+        {
+          "name": "电锯丧尸",
+          "strategy": "攻击无法被普通格挡，必须在挥锯瞬间触发完美格挡，然后反击打硬直，重复2-3次"
+        }
+      ],
+      "tips": [
+        "所有车辆后备箱均可搜刮弹药、草药",
+        "不要遗漏任何车辆",
+        "酒吧保险箱密码来自前台停业通知文件"
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "title": "罗兹山护理中心-东翼研究区",
+      "location": "Rhodes Hill Care Center East Wing",
+      "playable_character": "格蕾丝",
+      "description": "格蕾丝探索东翼研究区，获得溶血注射器",
+      "key_items": [
+        {
+          "name": "溶血注射器",
+          "type": "特殊武器",
+          "location": "东翼检查室桌面",
+          "usage": "永久击杀普通丧尸，对主厨丧尸可直接秒杀",
+          "description": "可永久击杀普通丧尸，防止尸体变异"
+        },
+        {
+          "name": "采血器",
+          "type": "关键道具",
+          "location": "血液实验室"
+        },
+        {
+          "name": "变性血液样本",
+          "type": "关键道具",
+          "location": "血液实验室",
+          "usage": "解锁血液合成配方"
+        }
+      ],
+      "gameplay": [
+        "血液合成谜题",
+        "东翼钥匙卡开启东翼区域",
+        "研究主任办公室解谜需要金属溶液"
+      ],
+      "enemies": [
+        {
+          "name": "肥胖丧尸",
+          "strategy": "建议打死会省不少时间"
+        }
+      ],
+      "tips": [
+        "溶血注射器仅用于清理堵路的普通丧尸",
+        "对BOSS无效"
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "title": "护理中心地下实验室",
+      "location": "Care Center Basement",
+      "playable_character": "双主角",
+      "description": "里昂和格蕾丝在地下实验室会合",
+      "key_items": [
+        {
+          "name": "门禁卡",
+          "type": "关键道具",
+          "location": "地下冷库器官转运箱谜题"
+        },
+        {
+          "name": "接合插头",
+          "type": "关键道具",
+          "location": "牢房区",
+          "usage": "开启特定门"
+        }
+      ],
+      "puzzles": [
+        {
+          "name": "器官转运箱谜题",
+          "location": "地下冷库",
+          "solution": "按正确顺序放置器官"
+        }
+      ],
+      "gameplay": [
+        "里昂前往隔离病房救出艾米莉",
+        "格蕾丝解开器官转运箱谜题"
+      ],
+      "boss_encounters": [
+        {
+          "name": "艾米莉变异体",
+          "playable": "里昂",
+          "strategy": " straightforward fight"
+        }
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "title": "东浣熊市",
+      "location": "East Raccoon City",
+      "playable_character": "里昂",
+      "description": "里昂在东浣熊市外围探索",
+      "key_items": [
+        {
+          "name": "BSAA集装箱钥匙",
+          "type": "关键道具",
+          "location": "剧情自动获得"
+        },
+        {
+          "name": "燃料罐",
+          "type": "关键道具",
+          "location": "加油站"
+        },
+        {
+          "name": "雪松公寓钥匙",
+          "type": "关键道具",
+          "location": "物流仓库高架"
+        }
+      ],
+      "weapons_available": [
+        "Silencer 9手枪（补给箱购买）",
+        "990-TAC霰弹枪（补给箱购买）",
+        "Stiri Revo3 A1冲锋枪（补给箱购买）",
+        "Gal SMG（地下停车场西北角）",
+        "Marksman 1A狙击步枪（BSAA集装箱）"
+      ],
+      "boss_encounters": [
+        {
+          "name": "泰坦纺锤者（巨型蜘蛛）",
+          "location": "废弃建筑",
+          "strategy": [
+            "保持距离躲避毒牙和利腿",
+            "射击橙色囊包（弱点）",
+            "利用红色爆炸桶",
+            "使用安魂左轮攻击背部弱点"
+          ],
+          "weakness": "背部橙色囊包",
+          "phases": [
+            "第一阶段：正常形态",
+            "第二阶段：暴露背部弱点"
+          ]
+        }
+      ],
+      "gameplay": [
+        "遭遇变异狗袭击",
+        "使用发电机开启大门",
+        "滑索穿越"
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "title": "浣熊市中心",
+      "location": "Raccoon City Center",
+      "playable_character": "里昂",
+      "description": "里昂进入浣熊市中心区域，重返浣熊市警察局",
+      "key_items": [
+        {
+          "name": "W870警用霰弹枪",
+          "type": "武器",
+          "location": "肯多枪械店货架"
+        },
+        {
+          "name": "银色瞄准镜",
+          "type": "配件",
+          "location": "肯多枪械店"
+        },
+        {
+          "name": "可爱小熊挂饰",
+          "type": "挂饰",
+          "location": "肯多枪械店"
+        }
+      ],
+      "boss_encounters": [
+        {
+          "name": "暴君T-501（Mr.X）",
+          "location": "篮球场",
+          "strategy": [
+            "格挡爪击",
+            "攻击暴露的心脏",
+            "躲避扔车攻击"
+          ],
+          "weakness": "胸口心脏"
+        },
+        {
+          "name": "植物43号",
+          "location": "黑荆棘站/ARK入口",
+          "strategy": [
+            "射击主花蕊",
+            "利用后方红色爆炸桶",
+            "躲避藤蔓抽打和呕吐攻击"
+          ],
+          "weakness": "中心花苞"
+        }
+      ],
+      "gameplay": [
+        "从RPD逃脱暴君追击",
+        "探索孤儿院",
+        "与维克多进行摩托车追逐战"
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "title": "ARK设施",
+      "location": "ARK Facility",
+      "playable_character": "里昂/格蕾丝",
+      "description": "最终章节，探索神秘的ARK设施",
+      "key_items": [
+        {
+          "name": "凡人之刃",
+          "type": "近战武器",
+          "location": "击败指挥官后获得",
+          "description": "强力斧头，可替代战术斧"
+        },
+        {
+          "name": "硫酸瓶",
+          "type": "投掷武器",
+          "location": "化学品储存室",
+          "usage": "对付舔食者"
+        },
+        {
+          "name": "超控钥匙",
+          "type": "关键道具",
+          "location": "化学品储存室"
+        },
+        {
+          "name": "磁力密钥",
+          "type": "关键道具",
+          "location": "废弃场控制室"
+        },
+        {
+          "name": "智性之球",
+          "type": "关键道具",
+          "location": "洁净室红盒子"
+        }
+      ],
+      "puzzles": [
+        {
+          "name": "灭菌室保险箱",
+          "normal_code": "右10、左90、右20",
+          "insanity_code": "左80、右50、左0",
+          "reward": "随机道具"
+        }
+      ],
+      "enemies": [
+        {
+          "name": "舔食者",
+          "strategy": "潜行避开，使用硫酸瓶可直接击杀"
+        }
+      ],
+      "boss_encounters": [
+        {
+          "name": "指挥官（HUNK样式）",
+          "location": "ARK服务器室",
+          "strategy": [
+            "仅能使用斧头攻击",
+            "成功格挡后反击",
+            "观察攻击模式，掌握格挡时机"
+          ],
+          "reward": "凡人之刃"
+        },
+        {
+          "name": "维克多·基甸（最终Boss）",
+          "location": "ARK设施深处",
+          "phases": [
+            {
+              "phase": 1,
+              "name": "人形维克多",
+              "strategy": [
+                "完美格挡可反弹子弹",
+                "瞬移前有明显音效和画面提示",
+                "保持距离"
+              ]
+            },
+            {
+              "phase": 2,
+              "name": "Nemesis形态",
+              "strategy": [
+                "射击全身红色弱点",
+                "使用速射武器如冲锋枪",
+                "继续格挡攻击"
+              ]
+            }
+          ],
+          "critical_choice": {
+            "true_ending": "选择'释放厄尔庇斯'",
+            "bad_ending": "选择'摧毁'"
+          }
+        }
+      ],
+      "tips": [
+        "舔食者看不到你，保持安静潜行就不会被发现",
+        "拿到硫酸瓶可直接杀死舔食者",
+        "舔食者听觉非常灵敏，注意别踩到玻璃渣"
+      ]
+    }
+  ],
+
+  "items": {
+    "consumables": [
+      {
+        "name": "绿色药草",
+        "type": "恢复道具",
+        "effect": "恢复少量生命值",
+        "description": "基础恢复道具"
+      },
+      {
+        "name": "红色药草",
+        "type": "合成材料",
+        "effect": "与绿色药草合成可完全恢复生命",
+        "description": "增强型合成材料"
+      },
+      {
+        "name": "医疗注射器",
+        "type": "恢复道具",
+        "effect": "恢复中等生命值",
+        "description": "快速恢复道具"
+      },
+      {
+        "name": "兴奋剂",
+        "type": "增强道具",
+        "effect": "永久增加最大生命值",
+        "description": "稀有强化道具"
+      },
+      {
+        "name": "稳定剂",
+        "type": "增强道具",
+        "effect": "永久增加稳定性",
+        "description": "提升战斗稳定性"
+      }
+    ],
+    "key_items": [
+      {
+        "name": "旧钥匙",
+        "usage": "开启特定门"
+      },
+      {
+        "name": "西翼钥匙卡",
+        "usage": "开启西翼区域"
+      },
+      {
+        "name": "东翼钥匙卡",
+        "usage": "开启东翼区域"
+      },
+      {
+        "name": "ID手环1级/2级/3级",
+        "usage": "开启对应安全等级的门"
+      },
+      {
+        "name": "保险丝",
+        "usage": "修复电路开门"
+      },
+      {
+        "name": "剪线钳",
+        "usage": "剪断铁丝网"
+      }
+    ],
+    "crafting_materials": [
+      {
+        "name": "空瓶",
+        "description": "用于合成燃烧瓶或硫酸瓶"
+      },
+      {
+        "name": "感染血液",
+        "description": "合成材料"
+      },
+      {
+        "name": "火药",
+        "description": "合成弹药材料"
+      }
+    ],
+    "throwables": [
+      {
+        "name": "燃烧瓶",
+        "recipe": "空瓶+感染血液×60",
+        "effect": "范围火焰伤害",
+        "location": "锅炉房配方"
+      },
+      {
+        "name": "硫酸瓶",
+        "recipe": "化学品储存室获取",
+        "effect": "对舔食者造成即死伤害",
+        "special": "可秒杀舔食者"
+      },
+      {
+        "name": "手榴弹",
+        "type": "爆炸物",
+        "effect": "大范围爆炸伤害",
+        "source": "击败Chunk掉落"
+      }
+    ],
+    "special": [
+      {
+        "name": "溶血注射器",
+        "type": "特殊武器",
+        "character": "格蕾丝专属",
+        "effect": "永久击杀普通丧尸，防止变异",
+        "description": "破坏感染血细胞的特殊药物"
+      }
+    ]
+  },
+
+  "weapons": {
+    "handguns": [
+      {
+        "name": "鳄龟手枪",
+        "english_name": "Alligator Snapper",
+        "character": "里昂初始",
+        "power": 1.0,
+        "stability": 2.3,
+        "precision": 2.3,
+        "rate_of_fire": 2.5,
+        "reload_speed": 3.0,
+        "ammo_capacity": 9,
+        "description": "可靠的半自动手枪，DSO人员配备",
+        "upgrades": [
+          {
+            "name": "补偿器Lv.1",
+            "effect": "威力1.3，稳定性3",
+            "cost": "5000信用点"
+          },
+          {
+            "name": "光滑弹匣卡笋Lv.1",
+            "effect": "装填速度3.5",
+            "cost": "3000信用点"
+          },
+          {
+            "name": "大容量弹匣Lv.1",
+            "effect": "弹容量12",
+            "cost": "2000信用点"
+          }
+        ]
+      },
+      {
+        "name": "B934手枪",
+        "character": "格蕾丝",
+        "power": "基础",
+        "obtain_method": "护理中心餐厅地面",
+        "description": "直吹式手枪，战前设计"
+      },
+      {
+        "name": "S&S M232手枪",
+        "character": "格蕾丝",
+        "power": 1.1,
+        "stability": 2.5,
+        "precision": 2.3,
+        "rate_of_fire": 2.3,
+        "reload_speed": 2.5,
+        "ammo_capacity": 9,
+        "obtain_method": "护理中心2F酒吧吧台",
+        "description": "可靠的手枪，格蕾丝用第一笔薪水购买自卫",
+        "recommendation": "早期推荐武器，全面优于B934"
+      },
+      {
+        "name": "消音者9",
+        "english_name": "Silencer 9",
+        "character": "里昂/格蕾丝",
+        "power": "高",
+        "precision": "极高",
+        "special": "内置消音器",
+        "obtain_method": "东浣熊市补给箱购买",
+        "description": "精准强力，消音器有效降低射击声音"
+      },
+      {
+        "name": "玛蒂尔达IMP",
+        "character": "通用",
+        "type": "三连发手枪",
+        "unlock_method": "通关后500CP解锁",
+        "description": "增强型手枪"
+      }
+    ],
+    "shotguns": [
+      {
+        "name": "MSBG 500霰弹枪",
+        "character": "里昂",
+        "power": "高",
+        "spread": "大",
+        "obtain_method": "护理中心阁楼",
+        "description": "泵动式霰弹枪，适合近距离群控",
+        "upgrades": [
+          {
+            "name": "硬铝螺栓Lv.1",
+            "effect": "威力3，射速2",
+            "cost": "4000信用点"
+          },
+          {
+            "name": "鸭嘴扼流圈Lv.1",
+            "effect": "威力3",
+            "cost": "2000信用点"
+          }
+        ]
+      },
+      {
+        "name": "990-TAC霰弹枪",
+        "character": "通用",
+        "type": "半自动",
+        "power": "中高",
+        "grouping": "优秀",
+        "obtain_method": "东浣熊市补给箱购买",
+        "description": "现代半自动霰弹枪，精密度高"
+      },
+      {
+        "name": "W870警用霰弹枪",
+        "character": "里昂",
+        "power": 6.5,
+        "spread": "极广",
+        "obtain_method": "肯多枪械店货架",
+        "description": "泵动式霰弹枪，扩散范围广"
+      }
+    ],
+    "smgs": [
+      {
+        "name": "Stiri Revo3 A1冲锋枪",
+        "character": "通用",
+        "power": 0.5,
+        "stability": 2.7,
+        "precision": 1.5,
+        "rate_of_fire": 4.6,
+        "reload_speed": 3.0,
+        "ammo_capacity": 30,
+        "obtain_method": "东浣熊市补给箱购买",
+        "description": "紧凑型聚合物框架冲锋枪，射速极高"
+      },
+      {
+        "name": "Gal冲锋枪",
+        "character": "里昂",
+        "obtain_method": "地下停车场西北角桌上",
+        "description": "强力冲锋枪"
+      },
+      {
+        "name": "芙蕾雅之针",
+        "english_name": "Freya's Needle",
+        "type": "机枪手枪",
+        "unlock_method": "通关后4000CP解锁",
+        "description": "轻量化全自动手枪，单手可用"
+      },
+      {
+        "name": "咔嗒卡宾枪",
+        "type": "突击步枪",
+        "unlock_method": "通关后6000CP解锁",
+        "description": "全自动突击步枪"
+      }
+    ],
+    "rifles": [
+      {
+        "name": "经典70狙击步枪",
+        "english_name": "Classic 70",
+        "character": "里昂",
+        "type": "栓动式",
+        "power": "极高",
+        "obtain_method": "剧情自动获得（庭院剧情）",
+        "description": "标准栓动步枪，可造成严重伤害",
+        "upgrades": [
+          {
+            "name": "PVD枪管Lv.1",
+            "effect": "威力3.7",
+            "cost": "5000信用点"
+          },
+          {
+            "name": "高级枪托Lv.1",
+            "effect": "稳定性3.3",
+            "cost": "3000信用点"
+          }
+        ]
+      },
+      {
+        "name": "神射手1A狙击步枪",
+        "character": "里昂",
+        "type": "半自动",
+        "power": 5.0,
+        "obtain_method": "BSAA集装箱03",
+        "description": "半自动精确射手步枪"
+      },
+      {
+        "name": "救赎步枪",
+        "type": "狙击步枪",
+        "unlock_method": "通关后3500CP解锁",
+        "description": "强力狙击步枪"
+      }
+    ],
+    "revolvers": [
+      {
+        "name": "安魂左轮",
+        "english_name": "Requiem",
+        "character": "里昂/格蕾丝",
+        "power": 4.3,
+        "stability": 0.5,
+        "precision": 0.8,
+        "rate_of_fire": 0.8,
+        "reload_speed": 0.8,
+        "ammo_capacity": 5,
+        "ammo_type": "12.7x55mm",
+        "obtain_method": "里昂初始/格蕾丝由里昂给予",
+        "description": "DSO配备的大型突击左轮，高威力穿透",
+        "upgrades": [
+          {
+            "name": "带孔枪管Lv.1",
+            "effect": "威力4.6",
+            "cost": "5000信用点"
+          },
+          {
+            "name": "枪管套Lv.1",
+            "effect": "稳定性2.2",
+            "cost": "3000信用点"
+          }
+        ],
+        "note": "弹药稀有，仅用于Boss战和危险目标"
+      },
+      {
+        "name": "幽灵怨恨",
+        "unlock_method": "通关后1000CP解锁",
+        "description": "替代马格南风格选项"
+      }
+    ],
+    "melee": [
+      {
+        "name": "战术斧",
+        "english_name": "Hatchet",
+        "character": "里昂",
+        "power": 1.8,
+        "durability": 2.5,
+        "obtain_method": "初始装备",
+        "description": "特种部队用斧头，可致命攻击但需定期维护",
+        "mechanics": [
+          "完美格挡不消耗耐久",
+          "敌人硬直后可接回旋踢",
+          "倒地后可处决"
+        ]
+      },
+      {
+        "name": "凡人之刃",
+        "english_name": "Mortal Edge",
+        "character": "里昂",
+        "power": 2.4,
+        "durability": 4.0,
+        "obtain_method": "击败ARK指挥官掉落/通关后3000CP解锁",
+        "description": "强力斧头，战术斧的升级版"
+      },
+      {
+        "name": "小刀",
+        "type": "近战",
+        "variants": [
+          {
+            "name": "简易小刀",
+            "obtain_method": "各处获得"
+          },
+          {
+            "name": "猎刀",
+            "obtain_method": "护理中心餐厅击败丧尸获得"
+          },
+          {
+            "name": "虎彻",
+            "special": "永不损坏",
+            "unlock_method": "通关后5000CP解锁"
+          },
+          {
+            "name": "R.I.P.刀",
+            "unlock_method": "癫狂难度护理中心交换室"
+          }
+        ]
+      }
+    ],
+    "special": [
+      {
+        "name": "RPG-7火箭筒",
+        "character": "里昂",
+        "power": 5.0,
+        "radius": 5.0,
+        "unlock_method": "通关后15000CP解锁",
+        "description": "火箭发射器",
+        "infinite_ammo_unlock": "35000CP"
+      }
+    ],
+    "weapon_upgrades": {
+      "system": "里昂可在补给箱购买升级",
+      "tier_1_2": "标准升级，提升威力、射速、弹容等",
+      "tier_3": "破坏全部25个浣熊先生后解锁高级调校",
+      "attachments": [
+        {
+          "name": "补偿器",
+          "location": "扭曲壁橱",
+          "effect": "改善后坐力稳定性"
+        },
+        {
+          "name": "银色瞄准镜",
+          "location": "肯多枪械店"
+        }
+      ]
+    }
+  },
+
+  "enemies": {
+    "common": [
+      {
+        "name": "普通丧尸",
+        "weakness": "头部",
+        "strategy": "手枪爆头触发硬直→回旋踢→处决",
+        "note": "尸体可能变异为水泡丧尸"
+      },
+      {
+        "name": "水泡丧尸",
+        "weakness": "全身水泡",
+        "strategy": "击破所有水泡",
+        "description": "丧尸尸体变异形态，移动更快更危险"
+      },
+      {
+        "name": "变异丧尸",
+        "description": "携带肿瘤的丧尸",
+        "warning": "肿瘤会释放毒素使尸体立即变异"
+      },
+      {
+        "name": "电锯丧尸",
+        "weakness": "完美格挡后反击",
+        "strategy": "必须在挥锯瞬间完美格挡，反击打硬直，重复2-3次",
+        "danger": "攻击无法被普通格挡"
+      },
+      {
+        "name": "主厨丧尸",
+        "weakness": "溶血注射器秒杀",
+        "strategy": "不要直接交战，引诱推车然后逃跑"
+      },
+      {
+        "name": "歌手丧尸",
+        "weakness": "优先击杀",
+        "danger": "尖叫会造成眩晕和伤害"
+      },
+      {
+        "name": "肥胖丧尸",
+        "strategy": "建议击杀会省不少时间",
+        "location": "护理中心东翼"
+      },
+      {
+        "name": "舔食者",
+        "weakness": "硫酸瓶即死",
+        "strategy": "保持安静潜行，听觉灵敏但视觉为零",
+        "warning": "不要踩到玻璃渣发出声响"
+      },
+      {
+        "name": "变异犬",
+        "strategy": "优先击杀近身攻击",
+        "location": "摩托车追逐战"
+      }
+    ],
+    "bosses": [
+      {
+        "name": "女孩（暗影幽灵）",
+        "type": "追踪者型",
+        "character": "格蕾丝专属",
+        "encounters": [
+          {
+            "location": "护理中心",
+            "phase": "首次遭遇",
+            "strategy": "无法击杀，只能逃跑，利用光源躲避"
+          },
+          {
+            "location": "水处理厂",
+            "phase": "最终决战",
+            "strategy": [
+              "开启三个电源开关开启天窗",
+              "阳光照射后可造成伤害",
+              "使用安魂左轮攻击"
+            ]
+          }
+        ],
+        "weakness": "强光/阳光",
+        "fear": "光源",
+        "description": "白发幽灵般的人形怪物，对声音极度敏感"
+      },
+      {
+        "name": "Chunk（肥硕巨婴）",
+        "type": "可选Boss",
+        "encounters": [
+          {
+            "character": "格蕾丝",
+            "location": "护理中心东翼2F",
+            "optional": true
+          },
+          {
+            "character": "里昂",
+            "location": "护理中心阁楼",
+            "strategy": [
+              "利用高低地形",
+              "霰弹枪爆头",
+              "反复移动游击"
+            ]
+          }
+        ],
+        "reward": "手榴弹（里昂击败后）",
+        "description": "巨大的肥硕怪物，被称为'巨婴'"
+      },
+      {
+        "name": "水泡宿主",
+        "type": "中型Boss",
+        "character": "里昂",
+        "location": "护理中心礼拜堂",
+        "strategy": "击破全身水泡，注意周围丧尸变异",
+        "description": "全身长满水泡的变异体"
+      },
+      {
+        "name": "泰坦纺锤者（巨型蜘蛛）",
+        "type": "巨型Boss",
+        "character": "里昂",
+        "location": "东浣熊市废弃建筑",
+        "phases": [
+          {
+            "phase": 1,
+            "strategy": "保持距离，射击口部"
+          },
+          {
+            "phase": 2,
+            "weakness": "背部橙色囊包",
+            "strategy": "造成足够伤害后倒地暴露弱点"
+          }
+        ],
+        "tips": [
+          "利用红色爆炸桶",
+          "使用安魂左轮攻击背部弱点4-5次",
+          "小蜘蛛群使用冲锋枪清理"
+        ],
+        "weakness": "口部/背部橙色囊包"
+      },
+      {
+        "name": "维克多与Garmrs",
+        "type": "追逐战",
+        "character": "里昂",
+        "location": "东浣熊市高速公路",
+        "mechanic": "摩托车追逐",
+        "strategy": [
+          "优先射击最近的变异犬",
+          "维克多头上出现红箭头时射击阻止火箭"
+        ],
+        "difficulty": "最简单Boss战"
+      },
+      {
+        "name": "超级暴君T-501（Mr.X）",
+        "type": "经典Boss",
+        "character": "里昂",
+        "location": "浣熊市中心篮球场",
+        "weakness": "胸口心脏",
+        "strategy": [
+          "格挡爪击",
+          "心脏暴露时集中火力",
+          "躲避扔车攻击",
+          "使用霰弹枪和步枪"
+        ],
+        "description": "经典暴君回归"
+      },
+      {
+        "name": "植物43号",
+        "type": "巨型Boss",
+        "character": "里昂",
+        "location": "黑荆棘站/ARK入口",
+        "weakness": "中心花苞",
+        "strategy": [
+          "等待中心花苞张开时射击",
+          "躲避藤蔓攻击（抬升时有预兆）",
+          "利用爆炸罐"
+        ],
+        "description": "巨大变异植物"
+      },
+      {
+        "name": "指挥官（HUNK样式）",
+        "type": "近战Boss",
+        "character": "里昂",
+        "location": "ARK设施",
+        "strategy": [
+          "仅能使用斧头攻击",
+          "成功格挡后连续攻击",
+          "学习攻击模式，掌握格挡时机"
+        ],
+        "reward": "凡人之刃",
+        "description": "类似HUNK的精英卫兵"
+      },
+      {
+        "name": "维克多·基甸（最终Boss）",
+        "type": "最终Boss",
+        "character": "里昂",
+        "location": "ARK设施深处",
+        "prerequisite": "选择'释放厄尔庇斯'进入真结局",
+        "phases": [
+          {
+            "phase": 1,
+            "name": "人形",
+            "abilities": ["触手攻击", "电击", "瞬移背刺"],
+            "strategy": [
+              "完美格挡可反弹子弹",
+              "瞬移前有音效和画面提示",
+              "保持距离"
+            ]
+          },
+          {
+            "phase": 2,
+            "name": "火箭发射器",
+            "strategy": "射击使其掉落火箭筒，拾取使用"
+          },
+          {
+            "phase": 3,
+            "name": "Nemesis形态",
+            "appearance": "巨大怪物，全身红色弱点",
+            "strategy": [
+              "射击全身红色囊肿",
+              "使用速射武器如冲锋枪",
+              "继续格挡攻击"
+            ],
+            "weakness": "全身红色弱点"
+          }
+        ],
+        "final_action": "QTE挣脱后使用斧头攻击核心"
+      }
+    ]
+  },
+
+  "collectibles": {
+    "summary": {
+      "total_types": 6,
+      "total_count": "200+"
+    },
+    "mr_raccoon": {
+      "name": "浣熊先生纪念雕像",
+      "total": 25,
+      "trophy": "你这个小坏蛋！",
+      "description": "浣熊造型的人偶，靠近会发出声音",
+      "method": "射击或用小刀攻击破坏",
+      "unlock": "通关后可购买地图显示位置",
+      "locations_summary": [
+        {
+          "area": "护理中心",
+          "count": 8,
+          "notes": "莱昂和格蕾丝各有专属"
+        },
+        {
+          "area": "东浣熊市",
+          "count": 10,
+          "notes": "里昂专属区域"
+        },
+        {
+          "area": "浣熊市中心",
+          "count": 4,
+          "notes": "包括孤儿院"
+        },
+        {
+          "area": "ARK设施",
+          "count": 3,
+          "notes": "最终区域"
+        }
+      ],
+      "special_note": "破坏全部25个解锁高级调校（Tier 3武器升级）"
+    },
+    "files": {
+      "name": "文件",
+      "total": 75,
+      "trophy": "案件已结案",
+      "description": "游戏中的文档、笔记和记录",
+      "tracking": "可在文件菜单查看已收集",
+      "carry_over": "多周目累计",
+      "categories": [
+        "调查报告",
+        "员工笔记",
+        "研究文档",
+        "新闻报道",
+        "个人日记"
+      ]
+    },
+    "antique_coins": {
+      "name": "古董币",
+      "total": 22,
+      "character": "格蕾丝专属",
+      "usage": "在护理中心会客厅交换升级",
+      "upgrades_available": [
+        {
+          "name": "腰包",
+          "cost": "5币",
+          "effect": "道具栏扩容",
+          "recommendation": "优先购买"
+        },
+        {
+          "name": "稳定剂",
+          "cost": "3币",
+          "effect": "永久提升稳定性"
+        },
+        {
+          "name": "兴奋剂",
+          "cost": "5币",
+          "effect": "永久提升最大生命"
+        },
+        {
+          "name": "溶血注射器配方",
+          "cost": "4币",
+          "effect": "解锁制作配方"
+        }
+      ],
+      "insanity_note": "癫狂难度位置会改变"
+    },
+    "safes": {
+      "name": "保险箱",
+      "total": 5,
+      "trophy": "没有保险箱是安全的",
+      "character": "格蕾丝专属",
+      "combinations": [
+        {
+          "location": "酒吧&休息室",
+          "normal": "左10-右80-左30",
+          "insanity": "不同密码",
+          "reward": "3个古董币"
+        },
+        {
+          "location": "检查室",
+          "reward": "3个古董币"
+        },
+        {
+          "location": "会客厅",
+          "reward": "浣熊先生地图（显示所有浣熊位置）"
+        },
+        {
+          "location": "灭菌室",
+          "normal": "右10-左90-右20",
+          "insanity": "左80-右50-左0"
+        }
+      ]
+    },
+    "bsaa_containers": {
+      "name": "BSAA集装箱",
+      "total": 3,
+      "trophy": "箱子期望",
+      "contents": [
+        "Marksman 1A狙击步枪",
+        "其他武器和物资"
+      ],
+      "key_location": "东浣熊市剧情获得"
+    },
+    "plant_seedlings": {
+      "name": "植物43号幼苗",
+      "total": 9,
+      "trophy": "今天不行，芽！",
+      "description": "摧毁所有植物43号幼苗"
+    },
+    "charms": {
+      "name": "挂饰",
+      "description": "武器装饰品，提供属性加成",
+      "examples": [
+        {
+          "name": "野心挂饰",
+          "effect": "伪无限弹药"
+        },
+        {
+          "name": "神射手A",
+          "effect": "暴击伤害"
+        },
+        {
+          "name": "监察者瞄准镜",
+          "effect": "辅助瞄准"
+        },
+        {
+          "name": "可爱小熊",
+          "location": "肯多枪械店"
+        }
+      ]
+    },
+    "hip_pouches": {
+      "name": "腰包",
+      "description": "增加道具栏空间"
+    }
+  },
+
+  "puzzles": {
+    "care_center": [
+      {
+        "name": "推车谜题",
+        "location": "护士站",
+        "solution": "将推车推到书架旁，爬上推车获取工具箱"
+      },
+      {
+        "name": "血液实验室谜题",
+        "solution": "使用采血器和变性血液样本合成"
+      },
+      {
+        "name": "研究主任办公室谜题",
+        "solution": "使用金属溶液"
+      },
+      {
+        "name": "器官转运箱谜题",
+        "location": "地下冷库",
+        "solution": "按正确顺序放置器官"
+      }
+    ],
+    "wrenwood": [
+      {
+        "name": "照片谜题",
+        "solution": "旋转照片发现背后的旧钥匙"
+      }
+    ],
+    "ark": [
+      {
+        "name": "最终谜题",
+        "description": "多步骤复杂谜题",
+        "note": "需要收集多个关键道具"
+      }
+    ]
+  },
+
+  "difficulties": {
+    "casual": {
+      "name": "休闲",
+      "description": "简单难度，适合新手",
+      "features": [
+        "敌人较弱",
+        "资源更丰富",
+        "自动存档充足"
+      ]
+    },
+    "standard_modern": {
+      "name": "标准（现代）",
+      "description": "推荐首周目",
+      "features": [
+        "动态难度系统",
+        "自动存档",
+        "死亡后就近复活"
+      ]
+    },
+    "standard_classic": {
+      "name": "标准（传统）",
+      "description": "传统生化体验",
+      "features": [
+        "格蕾丝需要墨带存档",
+        "墨带存档点回归"
+      ]
+    },
+    "insanity": {
+      "name": "癫狂",
+      "unlock": "通关任意难度后解锁",
+      "description": "最高难度",
+      "features": [
+        "取消动态难度，敌人强度固定",
+        "墨带存档",
+        "物品位置改变",
+        "保险箱密码改变",
+        "额外敌人"
+      ],
+      "rewards": "解锁特殊武器和内容"
+    }
+  },
+
+  "game_mechanics": {
+    "dynamic_difficulty": {
+      "description": "动态难度系统",
+      "rules": [
+        "少杀敌、少拾取、频繁受伤或死亡 → 动态等级下降 → 敌人更脆",
+        "杀敌越多、拾取物资越多 → 动态等级上升 → 敌人更耐打、伤害更高"
+      ],
+      "note": "癫狂难度取消动态调节"
+    },
+    "combat": {
+      "leon": {
+        "parry": "完美格挡不消耗斧头耐久",
+        "roundhouse": "爆头硬直接回旋踢可360°清场",
+        "execution": "倒地后用斧头处决"
+      },
+      "grace": {
+        "quick_turn": "键盘X/手柄后+B是唯一保命技",
+        "stealth": "潜行、声响引怪、光源规避",
+        "light": "打火机可驱赶女孩"
+      }
+    },
+    "crafting": {
+      "description": "合成系统",
+      "recipes": [
+        {
+          "item": "燃烧瓶",
+          "materials": "空瓶+感染血液×60"
+        },
+        {
+          "item": "弹药",
+          "materials": "火药+其他材料"
+        }
+      ]
+    },
+    "view_modes": {
+      "description": "视角切换",
+      "grace": "默认第一人称，可切换第三人称",
+      "leon": "默认第三人称，可切换第一人称"
+    }
+  },
+
+  "playtime": {
+    "main_story": "12-15小时",
+    "completionist": "25-30小时",
+    "speedrun": "3-4小时（New Game+）",
+    "platinum_estimate": "15-20小时（2-4周目）"
+  },
+
+  "endings": {
+    "count": 3,
+    "list": [
+      {
+        "name": "标准结局",
+        "condition": "正常通关"
+      },
+      {
+        "name": "真结局",
+        "condition": "选择'释放厄尔庇斯'",
+        "note": "解锁完整剧情"
+      },
+      {
+        "name": "坏结局",
+        "condition": "选择'摧毁'"
+      },
+      {
+        "name": "秘密结局",
+        "condition": "满足特定条件"
+      }
+    ]
+  },
+
+  "post_game": {
+    "new_game_plus": {
+      "description": "新游戏+",
+      "carry_over": "解锁的武器和无限弹药可继承"
+    },
+    "extra_content_shop": {
+      "description": "额外内容商店",
+      "unlock": "通关后解锁",
+      "currency": "CP（挑战点数）",
+      "items": [
+        {
+          "name": "无限火箭筒",
+          "cost": "35000CP（无限弹药）"
+        },
+        {
+          "name": "所有枪械无限弹药",
+          "cost": "50000CP"
+        },
+        {
+          "name": "RPG-7",
+          "cost": "15000CP"
+        },
+        {
+          "name": "虎彻（不毁小刀）",
+          "cost": "5000CP"
+        },
+        {
+          "name": "芙蕾雅之针",
+          "cost": "4000CP"
+        },
+        {
+          "name": "玛蒂尔达IMP",
+          "cost": "500CP"
+        },
+        {
+          "name": "幽灵怨恨",
+          "cost": "1000CP"
+        },
+        {
+          "name": "救赎步枪",
+          "cost": "3500CP"
+        },
+        {
+          "name": "咔嗒卡宾枪",
+          "cost": "6000CP"
+        },
+        {
+          "name": "凡人之刃",
+          "cost": "3000CP（如错过）"
+        }
+      ]
+    }
+  },
+
+  "trophies": {
+    "total": 49,
+    "platinum": true,
+    "key_trophies": [
+      {
+        "name": "你这个小坏蛋！",
+        "requirement": "破坏全部25个浣熊先生"
+      },
+      {
+        "name": "案件已结案",
+        "requirement": "阅读所有75个文件"
+      },
+      {
+        "name": "没有保险箱是安全的",
+        "requirement": "打开所有5个保险箱"
+      },
+      {
+        "name": "箱子期望",
+        "requirement": "打开所有3个BSAA集装箱"
+      },
+      {
+        "name": "今天不行，芽！",
+        "requirement": "摧毁所有9个植物43号幼苗"
+      },
+      {
+        "name": "致命剂量",
+        "requirement": "使用溶血注射器"
+      },
+      {
+        "name": "格蕾丝与歌利亚",
+        "requirement": "格蕾丝击败特定敌人"
+      },
+      {
+        "name": "致命二重奏",
+        "requirement": "里昂与格蕾丝合作"
+      }
+    ]
+  },
+
+  "tips_and_tricks": [
+    {
+      "category": "通用",
+      "tips": [
+        "建议首周目以体验剧情+收集为主",
+        "多周目累计收藏品",
+        "保持各区域手动存档以便补漏",
+        "本作没有章节选择功能"
+      ]
+    },
+    {
+      "category": "格蕾丝",
+      "tips": [
+        "溶血注射器优先用于清理堵路丧尸",
+        "空瓶优先留着合成燃烧瓶/硫酸瓶",
+        "马格南弹药仅用于Boss战",
+        "优先购买2个道具栏扩容"
+      ]
+    },
+    {
+      "category": "里昂",
+      "tips": [
+        "手枪爆头→回旋踢→处决循环节省弹药",
+        "霰弹枪和步枪弹药优先保留给Boss",
+        "补给箱每次进入新区域会刷新",
+        "优先升级手枪伤害和稳定性"
+      ]
+    },
+    {
+      "category": "资源管理",
+      "tips": [
+        "不要浪费火箭筒和马格南在小怪身上",
+        "动态难度下少杀敌可降低难度",
+        "多搜刮车辆后备箱",
+        "仔细检查每个房间"
+      ]
+    }
+  ]
+}
