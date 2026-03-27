@@ -1,6 +1,6 @@
 # 生化危机9：安魂曲 - 攻略站
 
-![GitHub Pages](https://github.com/yourusername/re9-guide/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+![GitHub Pages](https://github.com/legend402/re9-guide/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
 《生化危机9：安魂曲》完整攻略网站，基于游戏数据开发的静态网站。
 

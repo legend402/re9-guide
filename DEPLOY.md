@@ -13,7 +13,7 @@
 git init
 
 # 添加远程仓库
-git remote add origin https://github.com/yourusername/re9-guide.git
+git remote add origin https://github.com/legend402/re9-guide.git
 
 # 添加所有文件
 git add .
@@ -41,7 +41,7 @@ git push -u origin main
 
 部署完成后，网站将可通过以下地址访问：
 ```
-https://yourusername.github.io/re9-guide/
+https://legend402.github.io/re9-guide/
 ```
 
 ### 5. 部署状态
@@ -73,7 +73,7 @@ npx serve dist
    ```
    re9-guide.yourdomain.com
    ```
-3. 在域名 DNS 设置中添加 CNAME 记录指向 `yourusername.github.io`
+3. 在域名 DNS 设置中添加 CNAME 记录指向 `legend402.github.io`
 4. 在 GitHub Pages 设置中配置自定义域名
 
 ---
