@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
   const isHomePage = pathname === '/';
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`min-h-screen flex flex-col ${!isHomePage ? 'non-homepage-bg' : ''}`}>
       <Navbar isHomePage={isHomePage} />
       <main className={`flex-1 ${isHomePage ? '' : 'pt-[70px]'}`}>
         {children}

@@ -62,7 +62,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com" 
+              href="https://github.com/legend402/re9-guide" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-text-primary transition-colors"
