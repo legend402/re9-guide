@@ -1,0 +1,225 @@
+{
+  "description": "生化危机9:安魂曲 (Resident Evil 9: Requiem) 页面Banner图片配置",
+  "lastUpdated": "2026-03-27",
+  "pages": {
+    "characters": {
+      "pageName": "角色介绍",
+      "route": "/characters/",
+      "bannerImages": [
+        {
+          "filename": "characters-banner.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-grace-key-art.jpg",
+          "description": "格蕾丝关键艺术图",
+          "dimensions": "1200x1200",
+          "alt": "Resident Evil 9 - Grace Ashcroft"
+        },
+        {
+          "filename": "characters-banner-leon.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-leon-s-kennedy-art.jpg",
+          "description": "里昂艺术图 (宽幅)",
+          "dimensions": "1440x810",
+          "alt": "Resident Evil 9 - Leon S. Kennedy"
+        },
+        {
+          "filename": "characters-banner-duo.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-key-art.jpg",
+          "description": "双主角主视觉图",
+          "dimensions": "1200x1200",
+          "alt": "Resident Evil 9 - Key Art"
+        }
+      ]
+    },
+    "walkthrough": {
+      "pageName": "章节攻略",
+      "route": "/walkthrough/",
+      "bannerImages": [
+        {
+          "filename": "walkthrough-banner.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-raccoon-city-key-art.jpg",
+          "description": "浣熊市主视觉图 (宽幅)",
+          "dimensions": "1440x810",
+          "alt": "Resident Evil 9 - Raccoon City"
+        }
+      ],
+      "sceneImages": [
+        {
+          "filename": "scene-wrenwood.jpg",
+          "url": "https://vgtimes.com/games/resident-evil-requiem/screenshots/",
+          "description": "Wrenwood酒店场景",
+          "source": "VGTimes"
+        }
+      ]
+    },
+    "weapons": {
+      "pageName": "武器图鉴",
+      "route": "/weapons/",
+      "bannerImages": [
+        {
+          "filename": "weapons-banner.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-weapons-concept-art.jpg",
+          "description": "武器概念艺术",
+          "dimensions": "1440x810",
+          "alt": "Resident Evil 9 - Weapons Concept Art"
+        },
+        {
+          "filename": "weapons-banner-hatchet.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-hatchet-and-handguns-concept-art.jpg",
+          "description": "斧头和手枪概念艺术",
+          "dimensions": "1440x810",
+          "alt": "Resident Evil 9 - Hatchet and Handguns"
+        }
+      ],
+      "weaponImages": {
+        "source": "Evil Resource",
+        "baseUrl": "https://www.evilresource.com/images/data/full/re9/",
+        "items": {
+          "makeshift-knife.png": "临时小刀",
+          "hunting-knife.png": "猎刀",
+          "hatchet.png": "斧头",
+          "mortal-edge.png": "致命刃",
+          "alligator-snapper.png": "鳄鱼钳",
+          "requiem.png": "安魂曲马格南",
+          "b934.png": "B934手枪",
+          "classic-70.png": "Classic 70步枪",
+          "s-and-s-m232.png": "S&S M232",
+          "hand-grenade.png": "手榴弹",
+          "stacked-hand-grenade.png": "集束手榴弹",
+          "molotov-cocktail.png": "莫洛托夫鸡尾酒",
+          "bottle-of-acid.png": "酸液瓶"
+        }
+      }
+    },
+    "enemies": {
+      "pageName": "敌人/Boss",
+      "route": "/enemies/",
+      "bannerImages": [
+        {
+          "filename": "enemies-banner.jpg",
+          "url": "https://images.gamewatcherstatic.com/image/file/4/94/134694/large_RESIDENT_EVIL_requiem_20260228230400.webp",
+          "description": "The Girl (Shadow Ghost) Boss战截图",
+          "dimensions": "1920x1080",
+          "alt": "Resident Evil 9 - The Girl Boss Fight"
+        }
+      ],
+      "enemyImages": {
+        "source": "Evil Resource + Creative Uncut",
+        "eviResource": {
+          "baseUrl": "https://www.evilresource.com/images/data/full/re9/",
+          "items": {
+            "zombie.png": "僵尸",
+            "the-girl.png": "The Girl",
+            "blister-head.png": "Blister Head",
+            "chunk.png": "Chunk",
+            "blister-borne.png": "Blister Borne"
+          }
+        },
+        "creativeUncut": {
+          "baseUrl": "https://www.creativeuncut.com/gallery-50/art/",
+          "items": {
+            "rer-blister-head-concept-art.jpg": "Blister Head概念艺术",
+            "rer-blister-borne-concept-art.jpg": "Blister Borne概念艺术",
+            "rer-the-girl-concept-art.jpg": "The Girl概念艺术",
+            "rer-chunk-concept-art.jpg": "Chunk概念艺术",
+            "rer-titan-spinner-concept-art.jpg": "Titan Spinner概念艺术",
+            "rer-garmr-concept-art.jpg": "Garmr概念艺术",
+            "rer-plant-43-concept-art.jpg": "Plant 43概念艺术",
+            "rer-mr-x-super-tyrant-concept-art.jpg": "Mr. X/Super Tyrant概念艺术"
+          }
+        }
+      }
+    },
+    "collectibles": {
+      "pageName": "收集品指南",
+      "route": "/collectibles/",
+      "bannerImages": [
+        {
+          "filename": "collectibles-banner.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-grace-ashcroft-art.jpg",
+          "description": "格蕾丝·阿什克罗夫特艺术图",
+          "dimensions": "1440x810",
+          "alt": "Resident Evil 9 - Grace Ashcroft"
+        }
+      ],
+      "collectibleImages": {
+        "source": "Evil Resource",
+        "baseUrl": "https://www.evilresource.com/images/data/full/re9/",
+        "items": {
+          "antique-coin.png": "古董币",
+          "lockpick.png": "开锁器",
+          "mr-raccoon-charm.png": "浣熊先生护身符",
+          "med-injector.png": "医疗注射器",
+          "green-herb.png": "绿草药",
+          "mixed-herb-gg.png": "混合草药(G+G)",
+          "mixed-herb-ggg.png": "混合草药(G+G+G)",
+          "handgun-ammo.png": "手枪弹药",
+          "shotgun-shells.png": "霰弹枪弹药",
+          "rifle-ammo.png": "步枪弹药",
+          "scrap.png": "废料",
+          "rare-metal.png": "稀有金属",
+          "gunpowder-small.png": "小火药",
+          "gunpowder-large.png": "大火药"
+        }
+      },
+      "mapImages": {
+        "source": "Evil Resource",
+        "baseUrl": "https://www.evilresource.com/images/data/full/re9/",
+        "items": {
+          "the-wrenwood-hotel-floor-plan.png": "Wrenwood酒店平面图",
+          "care-center-west-wing-map.png": "护理中心西翼地图",
+          "care-center-east-wing-map.png": "护理中心东翼地图",
+          "care-center-basement-floor-plan.png": "护理中心地下平面图",
+          "research-facility-floor-guide.png": "研究设施楼层指南",
+          "raccoon-roundup-map-rhodes-hill.png": "Rhodes Hill浣熊集结地图"
+        }
+      }
+    },
+    "compare": {
+      "pageName": "数据对比",
+      "route": "/compare/",
+      "bannerImages": [
+        {
+          "filename": "compare-banner.jpg",
+          "url": "https://www.creativeuncut.com/gallery-50/art/rer-logo.jpg",
+          "description": "Resident Evil Requiem Logo",
+          "dimensions": "1440x720",
+          "alt": "Resident Evil 9 - Logo"
+        }
+      ]
+    }
+  },
+  "generalBanners": {
+    "description": "通用Banner图片，可用于多个页面",
+    "images": [
+      {
+        "filename": "banner-main.jpg",
+        "url": "https://www.creativeuncut.com/gallery-50/art/rer-key-art.jpg",
+        "description": "游戏主视觉图",
+        "dimensions": "1200x1200",
+        "usage": "首页、通用Banner"
+      },
+      {
+        "filename": "banner-wide.jpg",
+        "url": "https://www.creativeuncut.com/gallery-50/art/rer-raccoon-city-key-art.jpg",
+        "description": "浣熊市宽幅主视觉图",
+        "dimensions": "1440x810",
+        "usage": "宽幅Banner页面"
+      },
+      {
+        "filename": "banner-logo.jpg",
+        "url": "https://www.creativeuncut.com/gallery-50/art/rer-logo.jpg",
+        "description": "游戏Logo",
+        "dimensions": "1440x720",
+        "usage": "Logo展示"
+      }
+    ]
+  },
+  "downloadInstructions": {
+    "targetDirectory": "public/images/banners/",
+    "pythonScript": "download-banners.py",
+    "notes": [
+      "图片来自Creative Uncut和Evil Resource，仅限非商业用途",
+      "建议设置下载延迟0.5-1秒以避免服务器负担",
+      "已有的hero-bg.jpg、grace.jpg、leon.jpg无需重复下载"
+    ]
+  }
+}
