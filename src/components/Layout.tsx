@@ -2,16 +2,13 @@
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { usePathname } from 'next/navigation';
 
 interface LayoutProps {
   children: React.ReactNode;
+  isHomePage?: boolean;
 }
 
-export default function Layout({ children }: LayoutProps) {
-  const pathname = usePathname();
-  const isHomePage = pathname === '/';
-
+export default function Layout({ children, isHomePage = false }: LayoutProps) {
   return (
     <div className={`min-h-screen flex flex-col ${!isHomePage ? 'non-homepage-bg' : ''}`}>
       <Navbar isHomePage={isHomePage} />

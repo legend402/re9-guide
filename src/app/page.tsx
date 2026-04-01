@@ -64,7 +64,7 @@ export default function Home() {
   ];
 
   return (
-    <Layout>
+    <Layout isHomePage={true}>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}

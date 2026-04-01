@@ -15,7 +15,7 @@ export default function WalkthroughPage() {
   };
 
   return (
-    <Layout>
+    <Layout isHomePage={false}>
       {/* Header */}
       <section className="pt-24 pb-12">
         <div className="container-custom">
