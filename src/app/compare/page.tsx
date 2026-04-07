@@ -1,44 +1,40 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Layout from '@/components/Layout';
 import { getWeaponData } from '@/lib/data';
 import { useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
 import { Scale, Target, BarChart3 } from 'lucide-react';
+
+// 动态导入图表组件，禁用 SSR
+const WeaponChart = dynamic(
+  () => import('@/components/WeaponChart'),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-[400px] flex items-center justify-center text-text-muted">
+        加载图表中...
+      </div>
+    ),
+  },
+);
 
 export default function ComparePage() {
   const { weapons, recommended_loadouts } = getWeaponData();
   const [selectedWeapons, setSelectedWeapons] = useState<string[]>([]);
   const [compareType, setCompareType] = useState<'stats' | 'radar'>('stats');
 
-  const weaponsWithStats = weapons.filter(w => w.stats && typeof w.stats.power === 'number');
+  const weaponsWithStats = weapons.filter((w) => w.stats && typeof w.stats.power === 'number');
 
   const handleWeaponToggle = (weaponId: string) => {
     if (selectedWeapons.includes(weaponId)) {
-      setSelectedWeapons(selectedWeapons.filter(id => id !== weaponId));
+      setSelectedWeapons(selectedWeapons.filter((id) => id !== weaponId));
     } else if (selectedWeapons.length < 3) {
       setSelectedWeapons([...selectedWeapons, weaponId]);
     }
   };
 
-  const comparedWeapons = weaponsWithStats.filter(w => selectedWeapons.includes(w.id));
-
-  const chartData = [
-    { name: '威力', ...comparedWeapons.reduce((acc, w) => ({ ...acc, [w.name_cn]: w.stats?.power }), {}) },
-    { name: '稳定性', ...comparedWeapons.reduce((acc, w) => ({ ...acc, [w.name_cn]: w.stats?.stability }), {}) },
-    { name: '精准度', ...comparedWeapons.reduce((acc, w) => ({ ...acc, [w.name_cn]: w.stats?.precision }), {}) },
-    { name: '射速', ...comparedWeapons.reduce((acc, w) => ({ ...acc, [w.name_cn]: w.stats?.rate_of_fire }), {}) },
-    { name: '装填', ...comparedWeapons.reduce((acc, w) => ({ ...acc, [w.name_cn]: w.stats?.reload_speed }), {}) },
-  ];
-
-  const radarData = comparedWeapons.map(w => ({
-    name: w.name_cn,
-    威力: (w.stats?.power as number) * 20 || 0,
-    稳定性: (w.stats?.stability as number) * 20 || 0,
-    精准度: (w.stats?.precision as number) * 20 || 0,
-    射速: (w.stats?.rate_of_fire as number) * 20 || 0,
-    装填: (w.stats?.reload_speed as number) * 20 || 0,
-  }));
+  const comparedWeapons = weaponsWithStats.filter((w) => selectedWeapons.includes(w.id));
 
   const colors = ['#7C3AED', '#F43F5E', '#3B82F6'];
 
@@ -71,14 +67,15 @@ export default function ComparePage() {
               {weaponsWithStats.map((weapon) => (
                 <button
                   key={weapon.id}
+                  type="button"
                   onClick={() => handleWeaponToggle(weapon.id)}
                   disabled={!selectedWeapons.includes(weapon.id) && selectedWeapons.length >= 3}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
                     selectedWeapons.includes(weapon.id)
                       ? 'bg-primary text-white'
                       : selectedWeapons.length >= 3
-                      ? 'bg-surface-hover text-text-muted cursor-not-allowed'
-                      : 'bg-surface text-text-secondary hover:text-text-primary border border-border'
+                        ? 'bg-surface-hover text-text-muted cursor-not-allowed'
+                        : 'bg-surface text-text-secondary hover:text-text-primary border border-border'
                   }`}
                 >
                   {weapon.name_cn}
@@ -95,6 +92,7 @@ export default function ComparePage() {
           <div className="container-custom">
             <div className="flex justify-center gap-4 mb-6">
               <button
+                type="button"
                 onClick={() => setCompareType('stats')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
                   compareType === 'stats'
@@ -106,6 +104,7 @@ export default function ComparePage() {
                 柱状图
               </button>
               <button
+                type="button"
                 onClick={() => setCompareType('radar')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
                   compareType === 'radar'
@@ -122,50 +121,7 @@ export default function ComparePage() {
               <h3 className="font-heading text-xl text-text-primary mb-6 text-center">
                 武器属性对比
               </h3>
-              <div className="h-[400px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  {compareType === 'stats' ? (
-                    <BarChart data={chartData} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#2D2D44" />
-                      <XAxis dataKey="name" stroke="#94A3B8" />
-                      <YAxis stroke="#94A3B8" />
-                      <Tooltip 
-                        contentStyle={{ 
-                          backgroundColor: '#1A1A2E', 
-                          border: '1px solid #2D2D44',
-                          borderRadius: '8px'
-                        }}
-                      />
-                      <Legend />
-                      {comparedWeapons.map((w, i) => (
-                        <Bar 
-                          key={w.id} 
-                          dataKey={w.name_cn} 
-                          fill={colors[i]} 
-                          radius={[4, 4, 0, 0]}
-                        />
-                      ))}
-                    </BarChart>
-                  ) : (
-                    <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarData}>
-                      <PolarGrid stroke="#2D2D44" />
-                      <PolarAngleAxis dataKey="name" stroke="#94A3B8" />
-                      <PolarRadiusAxis stroke="#2D2D44" />
-                      <Legend />
-                      {comparedWeapons.map((w, i) => (
-                        <Radar
-                          key={w.id}
-                          name={w.name_cn}
-                          dataKey={w.name_cn}
-                          stroke={colors[i]}
-                          fill={colors[i]}
-                          fillOpacity={0.3}
-                        />
-                      ))}
-                    </RadarChart>
-                  )}
-                </ResponsiveContainer>
-              </div>
+              <WeaponChart comparedWeapons={comparedWeapons} compareType={compareType} />
             </div>
 
             {/* Detailed Comparison Table */}
@@ -198,9 +154,13 @@ export default function ComparePage() {
                         <td className="py-3 px-4 text-text-secondary">{row.label}</td>
                         {comparedWeapons.map((w) => (
                           <td key={w.id} className="py-3 px-4 text-text-primary">
-                            {row.key === 'type' ? w.type :
-                             w.stats && row.key in w.stats ? w.stats[row.key as keyof typeof w.stats] :
-                             row.key === 'ammo_type' ? w.ammo_type : '-'}
+                            {row.key === 'type'
+                              ? w.type
+                              : w.stats && row.key in w.stats
+                                ? String(w.stats[row.key as keyof typeof w.stats])
+                                : row.key === 'ammo_type'
+                                  ? w.ammo_type
+                                  : '-'}
                           </td>
                         ))}
                       </tr>
@@ -261,12 +221,14 @@ export default function ComparePage() {
                 格蕾丝配置
               </h3>
               <div className="space-y-3">
-                {Object.entries(recommended_loadouts.grace).filter(([k]) => k !== 'note').map(([slot, weapon]) => (
-                  <div key={slot} className="flex items-center justify-between p-3 bg-surface-hover rounded">
-                    <span className="text-text-muted capitalize">{slot}</span>
-                    <span className="text-text-primary">{weapon}</span>
-                  </div>
-                ))}
+                {Object.entries(recommended_loadouts.grace)
+                  .filter(([k]) => k !== 'note')
+                  .map(([slot, weapon]) => (
+                    <div key={slot} className="flex items-center justify-between p-3 bg-surface-hover rounded">
+                      <span className="text-text-muted capitalize">{slot}</span>
+                      <span className="text-text-primary">{String(weapon)}</span>
+                    </div>
+                  ))}
               </div>
               <p className="text-text-muted text-sm mt-4">{recommended_loadouts.grace.note}</p>
             </div>

@@ -1,3 +1,7 @@
+'use client';
+
+'use client';
+
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import SectionCard from '@/components/SectionCard';
