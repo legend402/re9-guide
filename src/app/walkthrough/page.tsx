@@ -1,3 +1,5 @@
+'use client';
+
 import Layout from '@/components/Layout';
 import Tag from '@/components/Tag';
 import { getWalkthroughData } from '@/lib/data';
